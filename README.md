@@ -8,9 +8,9 @@ Militar do Exército Brasileiro, referentes a Tecnologia da
 Informação.
 ---
 ## 👨‍💻️ Tecnologias Utilizadas
-Esse projeto foi criado utilizando as tecnologias:
--***Script Bash(Shell Script); e***
--***Python.***
+Esse projeto foi criado utilizando as tecnologias:<br>
+- ***Script Bash(Shell Script); e***
+- ***Python.***
 ---
 ### Editor
 - [Visual Studio Code](https://code.visualstudio.com/)
