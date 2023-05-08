@@ -1,5 +1,5 @@
 # TI OMs
-========
+
 Repositório criado com o objetivo de compartilhar 
 conteúdo sobre TI nas OMs do EB.
 ## :rocket: Descrição
@@ -46,5 +46,5 @@ https://github.com/arilealmatos/TI_OMs.git
     </td>
   </tr>
 </table>
----
+
 Copyright :copyright: 2023 - TI OMs
