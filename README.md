@@ -1,4 +1,5 @@
 # TI OMs
+====
 Repositório criado com o objetivo de compartilhar 
 conteúdo sobre TI nas OMs do EB.
 ## :rocket: Descrição
@@ -10,6 +11,7 @@ Informação.
 Esse projeto foi criado utilizando as tecnologias:
 Script Bash(Shell Script); e
 Python.
+---
 ### Editor
 - [Visual Studio Code](https://code.visualstudio.com/)
 ---
@@ -24,10 +26,25 @@ https://github.com/arilealmatos/TI_OMs.git
 	# Execute o projeto
 ```
 ---
-## 🔮 Funcionalidades Futuras
+## 🔮 Organizações Militares
 - [x] HGeS
 - [X] 3CIAFESP
 - [X] PQRMNT12
 - [X] 9BLOG
 - [ ] Loading...
 ---
+## :handshake: Colaborador Principal
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/arilealmatos">
+        <img src="https://avatars.githubusercontent.com/u/49329629?s=40&v=4" width="100px;" alt="Foto de Ari Leal Matos no GitHub"/><br>
+        <sub>
+          <b>arilealmatos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+---
+Copyright :copyright: 2023 - TI OMs
