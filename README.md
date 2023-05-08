@@ -1,4 +1,4 @@
-# TI OMs
+# Repositório de TI OMs
 
 Repositório criado com o objetivo de compartilhar 
 conteúdo sobre TI nas OMs do EB.
@@ -9,8 +9,8 @@ Informação.
 ---
 ## 👨‍💻️ Tecnologias Utilizadas
 Esse projeto foi criado utilizando as tecnologias:
-Script Bash(Shell Script); e
-Python.
+-***Script Bash(Shell Script); e***
+-***Python.***
 ---
 ### Editor
 - [Visual Studio Code](https://code.visualstudio.com/)
