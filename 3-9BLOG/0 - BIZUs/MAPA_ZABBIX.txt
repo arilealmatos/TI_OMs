@@ -1,0 +1,10 @@
+MAPA ZABBIX <= 5.2
+{HOST.NAME}
+{HOST.CONN}
+Latencia: {{HOST.HOST}:icmppingsec.last(0)}
+BANDA:
+{{HOST.NAME}:net.if.out[ifHCInOctets.2].last()}
+
+https://bestmonitoringtools.com/create-zabbix-maps-with-examples/
+
+{{HOST.HOST}:net.if.out[ifHCInOctets.2].last()}

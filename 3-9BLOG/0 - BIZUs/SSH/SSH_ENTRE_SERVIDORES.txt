@@ -1,0 +1,13 @@
+#SSH entre servidores
+ssh-keygen -t rsa
+
+cat ~/.ssh/id_rsa.pub | ssh administrador@10.26.68.3 "cat >> ~/.ssh/authorized_keys"
+cat ~/.ssh/id_rsa.pub | ssh administrador@10.26.68.6 "cat >> ~/.ssh/authorized_keys"
+
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1 
+    Allow from 10.26.70.15
+
+
+
