@@ -1,0 +1,88 @@
+#!/bin/bash
+
+# Variables
+MACHINE_TYPE=`uname -m`
+KERNEL_TYPE=`uname -r`
+
+clear
+echo ""
+
+# Mensagem Inicial
+echo -e "*** 41 CENTRO DE TELEMATICA ***";
+
+echo ""
+
+apt-get update -y
+wait
+
+apt-get install linux-headers-$KERNEL_TYPE -y
+wait
+
+apt-get install -y build-essential libc6 libc6-dev wget -y
+wait
+
+apt-get -f install -y
+wait
+
+#Install agent kaspersky
+if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+  # 64-bit stuff here
+  echo "Install package architecture 64 bits..."
+
+
+  dpkg -i klnagent64_11.0.0-29_amd64.deb
+  wait
+
+  apt-get -f install -y
+  wait
+
+  printf '10.89.36.32\n14000\n13000\nN\n1' | perl /opt/kaspersky/klnagent64/lib/bin/setup/postinstall.pl
+  wait
+  /opt/kaspersky/klnagent64/bin/klmover -address av.41ct.eb.mil.br
+else
+  # 32-bit stuff here
+  echo "Install package architecture 32 bits..."
+
+  dpkg -i klnagent_11.0.1-12_i386
+  wait
+
+  apt-get -f install -y
+  wait
+
+  printf '10.89.36.32\n14000\n13000\nN\n1' | perl /opt/kaspersky/klnagent/lib/bin/setup/postinstall.pl
+  wait
+  /opt/kaspersky/klnagent/bin/klmover -address av.41ct.eb.mil.br
+fi
+
+wait
+#
+
+#install kesl
+if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+  # 64-bit stuff here
+  echo "Install package architecture 64 bits..."
+
+  dpkg -i kesl_10.1.1-6421_amd64.deb
+  wait
+
+  apt-get -f install -y
+  wait
+
+  printf 'pt_BR.UTF-8\n\ny\ny\nn\ny' | perl /opt/kaspersky/kesl/bin/kesl-setup.pl
+  wait
+
+else
+  # 32-bit stuff here
+  echo "Install package architecture 32 bits..."
+
+  dpkg -i kesl_10.1.1-6421_i386.deb
+  wait
+
+  apt-get -f install -y
+  wait
+
+  printf 'pt_BR.UTF-8\n\ny\ny\nn\ny' | perl /opt/kaspersky/kesl/bin/kesl-setup.pl
+  wait
+fi
+
+

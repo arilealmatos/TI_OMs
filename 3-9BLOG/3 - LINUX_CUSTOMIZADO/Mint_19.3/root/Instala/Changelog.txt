@@ -1,0 +1,1197 @@
+# Changelog
+
+# ----------------------------------------------------------------- #
+# Nome do Arquivo :   Changelog.txt                                 #
+# Descrição       :   Modificaçoes e Atualizações.                  #
+# Site            :   http://intranet.9blog.eb.mil.br               #
+# Escrito por     :   1º Sgt L. Matos                               #
+# Manutenido por  :   1º Sgt L. Matos                               #
+# ----------------------------------------------------------------- #
+# Histórico       :   v4.0 14/11/2021, 1º Sgt L. Matos:             #
+#                     - Cabeçalho                                   #
+# ----------------------------------------------------------------- #
+# Agradecimentos  :                                                 #
+# SecInfor HGeS | TuTI 3ª Cia F Esp | STI PQRMNT12 | STI 9º B Log   #
+# ----------------------------------------------------------------- #
+
+# Todas as modificacoes importantes deste projeto estarao documentadas neste arquivo.
+
+# The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+# and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## LinuxMint 19.3 9º B Log
+
+# [V_05-23] - 17-04-2023
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+
+### Consertado
+- OCSIventory.
+
+### Removido
+
+## [/V_05-23]
+
+# [V_04-23] - 05-04-2023
+
+### Adicionado
+- HPLIP 3.22.10.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+
+### Consertado
+
+### Removido
+
+## [/V_04-23] 
+
+# [V_03-23] - 23-03-2023
+
+### Adicionado
+- Assinador Serpro.
+- Calamares.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+- Script 9BLOG Agente Kaspersky 13.
+- Script 9BLOG Versão Kaspersky-Gui 11.3 script.
+
+### Consertado
+
+### Removido
+- WhatsApp Desktop.
+
+## [/V_03-23] 
+
+# [V_02-23] - 22-03-2023
+
+### Adicionado
+- Assinador Serpro.
+- Calamares.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+- Agente Kaspersky 13.
+- Versão Kaspersky-Gui 11.3 script.
+
+### Consertado
+
+### Removido
+- WhatsApp Desktop.
+
+## [/V_02-23] 
+
+# [V_01-23] - 15-03-2023
+
+### Adicionado
+- Assinador Serpro.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+- Versão kasperky-gui.
+
+### Consertado
+
+### Removido
+
+## [/V_01-23] 
+
+
+# [V_17-22] - 26-10-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+- Firefox ESR(com certificado 1CTA).
+- install.sh (xterm)
+- install_klnagent.sh(xterm).
+
+### Consertado
+
+### Removido
+
+## [/V_17-22] 
+
+# [V_16-22] - 24-10-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+- Firefox ESR(com certificado 1CTA).
+- install.sh 
+- install_klnagent.sh(gnome-terminal & klnagent 14).
+
+### Consertado
+
+### Removido
+
+## [/V_16-22] 
+
+# [V_15-22] - 17-10-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+- Firefox ESR(com certificado 1CTA).
+- install.sh 
+- install_klnagent.sh
+
+### Consertado
+- Firefox(baixado).
+
+### Removido
+- Firefox(flatpak).
+
+## [/V_15-22] 
+
+
+# [V_14-22] - 12-10-2022
+
+### Adicionado
+- Klnagent 12.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell. 
+- install.sh 
+- Kaspersky.sh(dialog)
+
+### Consertado
+- Firefox(baixado).
+
+### Removido
+- Firefox(flatpak).
+
+## [/V_14-22] 
+
+# [V_12-22] - 03-10-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Versao NoMachine. 
+
+### Consertado
+
+### Removido
+
+## [/V_12-22] 
+
+# [V_11-22] - 23-08-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Tema Grub.
+- Tema Cinnamon. 
+
+### Consertado
+- LibreOffice.
+
+### Removido
+
+## [/V_11-22] 
+
+# [V_09-22] - 16-06-2022
+
+### Adicionado
+- CID via apt.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_09-22] 
+
+# [V_08-22] - 07-06-2022
+
+### Adicionado
+- MasterPDF.
+- Impressora Brother DCP-L2540dw.
+- OCR.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Impressao SAMBA.
+
+### Removido
+
+## [/V_08-22] 
+
+# [V_07-22] - 30-03-2022
+
+### Adicionado
+- HPLIP 3.21.12.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Senha Chrome.
+
+### Removido
+
+## [/V_07-22] 
+
+
+# [V_06-22] - 29-03-2022
+
+### Adicionado
+- HPLIP 22.
+- FoxIt Reader.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Senha Chrome.
+
+### Removido
+
+## [/V_06-22] 
+
+# [V_05-22] - 28-03-2022
+
+### Adicionado
+- NumLock X.
+
+### Modificado
+- Senha.
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+- Suporte Kaspersky 32 bits.
+
+## [/V_05-22] 
+
+# [V_04-22] - 18-03-2022
+
+### Adicionado
+- Certificados 1CTA.
+- Firefox via flatpak.
+- Whatsapp Desktop.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_04-22] 
+
+# [V_03-22] - 10-03-2022
+
+### Adicionado
+- Libreoffice 7.3.1 via apt.
+- HPLIP 3.22.
+- Firefox via flatpak.
+- Whatsapp Desktop.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_03-22] 
+
+# [V_02-22] - 10-02-2022
+
+### Adicionado
+- CiD 1.2.1.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_02-22] 
+
+# [V_01-22] - 07-02-2022
+
+### Adicionado
+- Impressora LexMark MX711de.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Plymouth 9BLOG.
+- Desabilitado Serviço NetworkManager wait.
+
+### Removido
+- Repositório playonlinux.
+
+## [/V_01-22] 
+
+# [V_45] - 09-12-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Resolvido erro script install.sh.
+
+### Removido
+
+## [/V_45] 
+
+
+# [V_44] - 06-12-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Permissoes script install.sh.
+
+### Removido
+
+## [/V_44] 
+
+# [V_43] - 03-12-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Script install.sh.
+
+### Removido
+- Klnagent 11.00.
+- Kes 12.
+
+## [/V_43] 
+
+# [V_42] - 02-12-2021
+
+### Adicionado
+- Klnagent 11.00.
+- Kes 12.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Script install.sh.
+
+### Removido
+
+## [/V_42] 
+
+
+# [V_41] - 30-11-2021
+
+### Adicionado
+- Pidgin.
+- Cheese.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_41] 
+
+# [V_40] - 23-11-2021
+
+### Adicionado
+- Rar e Unrar 7-zip.
+- Gimp extras.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Exibicao ocultos Nemo.
+
+### Removido
+
+## [/V_40]
+
+# [V_39] - 22-11-2021
+
+### Adicionado
+- Palemoon via apt.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Icone Palemonn.
+- Icone LibreOffice.
+- Icone Nemo.
+
+### Removido
+
+## [/V_39]
+
+# [V_38] - 30-09-2021
+
+### Adicionado
+- Controle de Brilho.    .
+- LibreOffice 7.1.
+- Tela Grub.
+- Fusion e pacote EFI Systemback.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Palemonn.
+
+### Removido
+- LibreOffice 7.0.
+
+## [/V_38]
+
+# [V_37] - 28-09-2021
+
+### Adicionado
+- SDDM.
+- Evince.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- SISCOFIS.
+
+### Removido
+- FoxitReader.
+
+## [/V_37]
+
+# [V_36] - 08-09-2021
+
+### Adicionado
+- Kernel 4.15.154.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Google Chrome via Apt.
+
+### Consertado
+
+### Removido
+
+## [/V_36]
+
+# [V_35] - 02-09-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Google Chrome Atualizado.
+
+### Consertado
+- MindDrivers via Proxy.
+
+### Removido
+
+## [/V_35]
+
+# [V_34] - 20-07-2021
+
+### Adicionado
+- SafeNet Client.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Dispositivos de Segurança Firefox.
+- Proxy Firefox.
+
+### Consertado
+- HP-PLUGIN.
+
+### Removido
+
+## [/V_34]
+
+# [V_33] - 19-07-2021
+
+### Adicionado
+- Applet Iniciar.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- HP-PLUGIN.
+
+### Removido
+- Kernels Obsoletos.
+
+## [/V_33]
+
+# [V_32] - 13-07-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Wine.
+- PlayOnLinux.
+
+### Consertado
+
+### Removido
+
+## [/V_32]
+
+# [V_31] - 12-07-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Hora Local e da rede.
+
+### Removido
+
+## [/V_31]
+
+# [V_30] - 08-07-2021
+
+### Adicionado
+- Endereço Servidor Kaspersky 1CTA(netagent).
+- Chave de Ativacao Kaspersky(/home/blog/Documentos).
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Tamanho pasta SIMATExOM.
+
+### Consertado
+
+### Removido
+
+## [/V_30]
+
+# [V_29] - 02-07-2021
+
+### Adicionado
+- CatFish(repositorio).
+- Okular(Leitor PDF).
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Driver Nvidia.
+- Driver Xorg.
+
+### Removido
+
+## [/V_29]
+
+# [V_28] - 27-06-2021
+
+### Adicionado
+- Leafpad(repositorio).
+- Okular(Leitor PDF).
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Antivirus Kaspersky.
+
+### Consertado
+
+### Removido
+
+## [/V_28]
+
+# [V_27] - 24-06-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Tema KWINDE.
+- Inicializacao.
+
+### Consertado
+
+### Removido
+
+## [/V_27]
+
+# [V_26] - 17-06-2021
+
+### Adicionado
+- Driver NVIDIA.
+- Driver AMD.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_26]
+
+# [V_25] - 13-06-2021
+
+### Adicionado
+- GTKLP Impressão SIAFI.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Chrome atualizado.
+- Pesquisa Firefox Duck Duck Go.
+
+### Consertado
+
+### Removido
+
+## [/V_25]
+
+# [V_23] - 04-06-2021
+
+### Adicionado
+- Usuario blog.
+- Driver Brother DCP-T510W.
+- Atualizado Driver Unified Samsung Printer.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Libreoffice.
+
+### Consertado
+- Hplip.
+
+### Removido
+
+## [/V_23]
+
+# [V_22] - 02-06-2021
+
+### Adicionado
+- Bliblioteca python hplip.
+- Plugins hplip.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- App-Armor.
+
+### Consertado
+- Chrome.
+- Hplip.
+
+### Removido
+
+## [/V_22]
+
+# [V_21] - 27-05-2021
+
+### Adicionado
+- Usuário BLog
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- SIMATEx
+
+### Consertado
+- Chrome.
+- /etc/default/grub.
+- SIMATEx
+- NoMachine
+
+### Removido
+- Usuario blog.
+
+## [/V_21]
+
+# [V_20] - 03-05-2021
+
+### Adicionado
+- HPLIP 3.21.2.
+- ONLYOFFICE.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Chrome.
+- /etc/default/grub.
+
+### Removido
+- HPLIP 3.19.7.
+- WPS
+
+## [/V_20]
+
+# [V_19] - 16-04-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Chrome.
+- /etc/default/grub.
+
+### Removido
+
+## [/V_19]
+
+# [V_18] - 16-04-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Chrome.
+- Grub.
+
+### Removido
+
+## [/V_18]
+
+# [V_17] - 06-04-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Scripts.
+- SIMATEx.
+
+### Removido
+
+## [/V_17]
+
+# [V_16] - 30-03-2021
+
+### Adicionado
+- Script Grupo-Usuario.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Scripts.
+
+### Removido
+
+## [/V_16]
+
+# [V_15] - 29-03-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+
+### Consertado
+- SIMATEx
+
+### Removido
+
+## [/V_15]
+
+# [V_14] - 25-03-2021
+
+### Adicionado
+- Kernel.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+
+### Consertado
+- OCS
+
+### Removido
+
+## [/V_14]
+
+
+# [V_13] - 21-03-2021
+
+### Adicionado
+- Server OCS.
+
+### Modificado
+- Scripts.
+
+### Consertado
+
+### Removido
+
+## [/V_13]
+
+## [V_12] - 18-03-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- /etc/skell.
+
+### Consertado
+- Instalacao KES.
+
+### Removido
+
+## [/V_12]
+
+
+## [V_11] - 17-03-2021
+
+### Adicionado
+- KES 1CTA.
+
+### Modificado
+- /usr/bin/opcoes_do_administrador.sh.
+- Scripts.
+
+### Consertado
+
+### Removido
+
+## [/V_11]
+
+## [V_10] - 11-03-2021
+
+### Adicionado
+- Libreoffice 7.0.5(via pacote).
+
+### Modificado
+- /etc/skell.
+- Scripts.
+
+### Consertado
+- Proxy Painel de Controle Java.
+
+### Removido
+- Libreoffice via snap.
+
+## [/V_10]
+
+
+## [V_09] - 10-03-2021
+
+### Adicionado
+
+### Modificado
+- /etc/skell.
+- Scripts.
+
+### Consertado
+- Lista de repositório.
+
+### Removido
+
+## [/V_09]
+
+## [V_08] - 07-03-2021
+
+### Adicionado
+- Anyconnect Cisco.
+
+### Modificado
+- /etc/skell.
+- Scripts.
+- Domínio em smb.conf.
+
+### Consertado
+- Libreoffice Writer.
+
+### Removido
+- Libreoffice Writer.
+
+## [/V_08]
+
+## [V_07] - 02-03-2021
+
+### Adicionado
+- Apt-cacher.
+
+### Modificado
+- /etc/skell.
+- Scripts.
+
+### Consertado
+- Libreoffice snap.
+
+### Removido
+- Libreoffice snap.
+- Kernel obsoleto.
+
+## [/V_07]
+
+## [V_06] - 25-02-2021
+
+### Adicionado
+
+### Modificado
+
+### Consertado
+
+### Removido
+- Pacotes snap.
+- Kernel obsoleto.
+
+## [/V_06]
+
+## [V_05] - 24-02-2021
+
+### Adicionado
+
+### Modificado
+- Kernel atualizado.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_05]
+
+## [V_04] - 23-02-2021
+
+### Adicionado
+
+### Modificado
+- Scripts .config/autostart.
+- /etc/skell.
+
+### Consertado
+- Inicialização LinuxMint.
+
+### Removido
+
+## [/V_04]
+
+## [V_03] - 22-02-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- /etc/skell.
+- Servidor SIMATEX.
+- Senha root.
+
+### Consertado
+
+### Removido
+- Notepadd plu plus e outros pacotes snap.
+
+## [/V_03]
+
+## [V_02] - 19-02-2021
+
+### Adicionado
+
+### Modificado
+- Imagens BLOG(plymouth e pasta imagens).
+- Usuário blog.
+
+### Consertado
+
+### Removido
+- Usuário pqrmnt12.
+
+## [/V_02]
+
+## [V_01] - 17-02-2021
+
+### Adicionado
+- Libreoffice via snap.
+- Sweeper.
+- Stacer.
+
+### Modificado
+- Atualizadoss programas e repositorios.
+- Linha /etc/environment
+- Linha /etc/apt/apt.conf.d/00aptproxy
+- Linha /etc/wgetrc
+
+### Consertado
+
+### Removido
+- Interface do usuario(/etc/skel).
+- Kernels obsoletos.
+- cinnamon-properties(mantido e modificado LinuxMint).
+
+## [/V_01]
+
+## LinuxMint PqRMnt/12
+
+## [V_56] - 09-12-2020
+
+### Adicionado
+- Ubuntu Cleaner via ".deb".
+
+### Modificado
+- Atualizadoss programas e repositorios.
+- Nomes dos Scripts.
+- Interface do usuario(/etc/skel).
+- Atualizado script OCS
+
+### Consertado
+- Seahorse(Chrome).
+
+### Removido
+
+## [/V_56]
+
+## [V_55] - 03-12-2020
+
+### Adicionado
+- Notepad-Plus-Plus via snap.
+- Solitaire via snap.
+- Google Chrome via ".deb".
+
+### Modificado
+- Atualizado Kernel.
+- Atualizadoss programas e repositorios.
+- Nomes dos Scripts.
+- Interface do usuario(/etc/skel).
+
+### Consertado
+- Seahorse(Chrome).
+
+### Removido
+- Google Chrome pelo Adicionar Aplicativos.
+- Kernel Obsoleto.
+
+## [/V_55]
+
+

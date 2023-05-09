@@ -1,0 +1,20 @@
+Instalador do agente e antivírus Kaspersky para computadores com linux 32bits e 64 bits.
+
+
+Versões suportadas: *Debian 8 e 9 (32 e 64bits)
+		    *Ubuntu 14.04 e versões posteriores (32 e 64bits)	
+
+Instalação: 
+
+1) Efetuar o download do arquivo: http://intranet.1cta.eb.mil.br/kaspersky_linux_1CTA.zip
+
+2) Descompactar o arquivo
+
+3) Executar como root o script: install_kes.sh
+	 Exemplo: root@estacao01:/# ./install_kes.sh
+
+4) Após a conclusão do script o mesmo apresentara a mensagem: 
+	Instalação concluída. Reinicie o computador
+
+5) Reinicie o computador. Após a instalação o usuário pode utilizar o computador enquanto as tarefas de 
+atualização e licenciamento são executadas automaticamente através do Security Center no 1ºCTA.

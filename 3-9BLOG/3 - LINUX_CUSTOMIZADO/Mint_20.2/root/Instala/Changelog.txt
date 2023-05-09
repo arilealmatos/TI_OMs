@@ -1,0 +1,524 @@
+﻿# Changelog
+
+# ------------------------------------------------------------------------------------- #
+# Nome do Arquivo :   Changelog.txt                                                     #
+# Descrição       :   Modificaçoes e Atualizações.                                      #
+# Site            :   http://intranet.9blog.eb.mil.br                                   #
+# Escrito por     :   1º Sgt L. Matos                                                   #
+# Manutenido por  :   1º Sgt L. Matos                                                   #
+# ------------------------------------------------------------------------------------- #
+# Agradecimentos  :                                                                     #
+# SecInfor HGeS | TuTI 3ª Cia F Esp | STI PQRMNT12 | STI 9º B Log                       #
+# ------------------------------------------------------------------------------------- #
+# Todas as modificacoes importantes deste projeto estarao documentadas neste arquivo.
+
+# The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+# and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## LinuxMint 20.2 9º B Log
+
+# [V_05_23] - 17-04-2023
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- OCS Inventory.
+
+### Removido
+
+## [/V_05_23]
+
+# [V_04_23] - 10-04-2023
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_04_23]
+
+# [V_03_23] - 23-03-2023
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Script Agente Kesl 13.
+- Script Kesl 11.3.
+
+### Consertado
+
+### Removido
+
+## [/V_03_23]
+
+# [V_02_23] - 22-03-2023
+
+### Adicionado
+- Assinador Serpro.
+- Calamares.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Agente Kesl 13.
+- Kesl 11.3.
+
+### Consertado
+
+### Removido
+- WhatsApp Desktop.
+
+## [/V_02_23]
+
+# [V_01_23] - 15-03-2023
+
+### Adicionado
+- Assinador Serpro.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Kesl 11.3.
+
+### Consertado
+
+### Removido
+
+## [/V_01_23]
+
+# [V_12_22] - 28-10-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- install.sh.(sudo xterm)
+- install_klnagent.sh(sudo xterm e versao 14).
+
+### Consertado
+
+### Removido
+
+## [/V_12_22]
+
+# [V_11_22] - 17-10-2022
+
+### Adicionado
+
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Firefox_ESR(com certificado 1CTA).
+- install.sh.
+- install_klnagent.sh.
+
+### Consertado
+
+### Removido
+
+## [/V_11_22]
+
+# [V_10_22] - 13-10-2022
+
+### Adicionado
+- KlnAgent 12.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Firefox_ESR.
+- install.sh.
+- Kaspersky.sh.
+
+### Consertado
+
+### Removido
+
+## [/V_10_22]
+
+# [V_09_22] - 03-10-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- Versao NoMachine.
+
+### Consertado
+
+### Removido
+
+## [/V_09_22]
+
+# [V_08_22] - 24-08-2022
+
+### Adicionado
+- Tema Windows 3.2.1.
+- Tema Grub.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- LibreOffice
+
+### Removido
+
+## [/V_08_22]
+
+# [V_07_22] - 02-08-2022
+
+### Adicionado
+- Wine(pacotes adicionais).
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Siscofis OM
+
+### Removido
+
+## [/V_07_22]
+
+# [V_06_22] - 01-08-2022
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Siscofis OM
+
+### Removido
+
+## [/V_06_22]
+
+
+# [V_05_22] - 21-06-2022
+
+### Adicionado
+- Nautilus.
+- VSCode.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Nemo(root).
+- Hp-Plugin.
+
+### Removido
+
+## [/V_05_22]
+
+# [V_04_22] - 14-05-2022
+
+### Adicionado
+- nautilus.
+- VSCode.
+- hp-plugin HPLIP 21.2.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Nemo(root).
+
+### Removido
+
+## [/V_04_22]
+
+# [V_03_22] - 23-05-2022
+
+### Adicionado
+- Aplicativos PDF.
+- Kernel atual.
+- LibreOficce via ppa.
+- TokenAdmin.
+- HPLIP 21.2.
+
+### Modificado
+- Versão OnlyOffice.
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Sintaxe script Kaspersky.
+
+### Removido
+
+## [/V_03_22]
+
+# [V_02_22] - 12-04-2022
+
+### Adicionado
+- Kernel atual.
+- LibreOficce via ppa.
+- TokenAdmin.
+- HPLIP 21.2.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Sintaxe script Kaspersky.
+
+### Removido
+
+## [/V_02_22]
+
+# [V_13] - 28-12-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Sintaxe script install.sh.
+
+### Removido
+
+## [/V_13]
+
+# [V_12] - 07-12-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Script install.sh.
+
+### Removido
+
+## [/V_12]
+
+
+# [V_11] - 06-12-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Script install.sh.
+
+### Removido
+
+## [/V_11]
+
+# [V_10] - 03-12-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Script install.sh.
+
+### Removido
+- Kes 11.02.
+- Klnagent 11.00.
+
+## [/V_10]
+
+# [V_09] - 02-12-2021
+
+### Adicionado
+- Kes 11.02.
+- Klnagent 11.00.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Script install.sh.
+
+### Removido
+
+## [/V_09]
+
+
+# [V_08] - 30-11-2021
+
+### Adicionado
+- Pidgin.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Menu.
+
+### Removido
+
+## [/V_08]
+
+
+# [V_07] - 25-11-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+- /etc/cid/cid.conf.
+
+### Consertado
+- Bibliotecas KlnAgent.
+
+### Removido
+
+## [/V_07]
+
+
+# [V_06] - 22-11-2021
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_06]
+
+# [V_05] - 18-11-2021
+
+### Adicionado
+- Bloqueio IPv6.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Inventário OCS.
+
+### Removido
+
+## [/V_05]
+
+# [V_04] - 18-11-2021
+
+### Adicionado
+- Ocinventory(acessórios).
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Tema Grub Vimix.
+
+### Removido
+
+## [/V_04]
+
+# [V_03] - 16-11-2021
+
+### Adicionado
+- Okular,Programas para Escanear.
+- Hplip-gui.
+- Jogos.
+- OpenConnect. 
+- VLC.
+- Wine-gui.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Icone Palemonn.
+
+### Removido
+
+## [/V_03]
+
+# [V_02] - 08-11-2021
+
+### Adicionado
+- Oracle Java 17 Runtime.
+- Google Chrome.
+- OCS Inventory.
+- SDDM.
+- LibreOffice 7.0.
+- Systemback 1.9.4.
+- Wine Stable.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Icone Palemonn.
+- Icone LibreOffice.
+
+### Removido
+- LibreOffice 6.4.
+
+## [/V_02]

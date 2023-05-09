@@ -1,0 +1,65 @@
+Para instalar em máquinas Windows, utilizar o seguinte instalador, que já executa todas as tarefas de licenciamento e apontamento para o servidor:
+
+http://intranet.1cta.eb.mil.br/setup-KES-1cta-2021.exe
+
+Para estações Linux, utilizar o seguinte instalador:
+ 
+Instalação Antivírus Kaspersky - Linux
+ 
+INSTRUÇÕES PARA A INSTALAÇÃO DO ANTIVÍRUS KASPERSKY NO LINUX
+
+ 
+
+ A) Verificar se o computador está nas seguintes versões:
+    Ubuntu 14
+    Ubuntu 16
+    Debian 8
+    Debian 9
+    Para a verificação das versões utilizar os comandos abaixo:
+    # cat /etc/issue
+    # lsb_release -a
+    O antivírus poderá ser instalado somente nas versões acima especificadas.
+  B) Verificar os requisitos mínimos de hardware para instalação no Linux 
+    - CoreTM 2 Duo 1.86 GHz ou superior
+    - 1 GB de memória RAM para Linux de 32-bits 
+    - 2 GB de memória RAM para Linux de 64-bits 
+    - Partição de no mínimo 1 GB de swap
+    - 1 GB de espaço livre no HD para a instalação do antivírus
+ 
+
+  C) Verificar se o Linux está atualizando corretamente:
+ 
+    1. logar como root no computador 
+    2. executar o seguinte comando:
+    
+    # apt-get update
+    # apt-get upgrade
+    # apt-get install build-essential
+
+    O computador deve atualizar a lista dos repositórios de maneira correta.
+    OBS:Caso erro de grub: utilizar o comando apt-get install grub.
+    
+  D) Se os passos acima foram satisfatórios execute os seguintes comandos como root:
+     # cd /tmp
+     # wget http://intranet.1cta.eb.mil.br/kaspersky_linux_1CTA.zip
+     # unzip kaspersky_linux_1CTA.zip
+     # cd Kaspersky-Linux-1CTA
+     # ./install-auto.sh
+
+     Aguarde até o processo terminar.
+     A instalação estará completa quando você receber a mensagem abaixo:
+     "O Kaspersky Network Agent e o Endpoint Security foram instalados com sucesso."
+     
+      Feito.
+ 
+
+   E) Em caso de erro repita o processo. 
+   F) Para verificar se o antivírus está funcionando no Linux rode o comando abaixo:
+      # ps -aux | grep kaspersky 
+      O comando deve retornar algumas linhas a respeito do kaspersky o do agente klnagent
+      Mais informações sobre o funcionamento do antivírus podem ser verificadas nos arquivos de log:
+      # cat /var/log/kaspersky/kesl/kesl_launcher.log 
+      # cat /var/log/kaspersky/kesl/kesl_wdserver.log
+      Para parar e iniciar o serviço do antivírus podem ser executados os comandos abaixo:
+      # /etc/init.d/kesl-supervisor stop
+      # /etc/init.d/kesl-supervisor start
