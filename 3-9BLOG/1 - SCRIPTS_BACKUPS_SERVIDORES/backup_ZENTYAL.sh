@@ -43,8 +43,7 @@ cp -rf $samba/* $destino/$current_date
 # Hora Final
 HORAFINAL=$(date +%T)
 
-echo "---------------------------------------------------------------------------------------" >>"$LOG"
-echo "|  Pastas Copiadas em $HORAFINAL.                                                          |" >>"$LOG"
+echo "|Pastas Copiadas em $HORAFINAL.                                                          |" >>"$LOG"
 # script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 # opção do comando date: -u (utc), -d (date), +%s (second since 1970)
 HORAINICIAL01=$(date -u -d "$HORAINICIAL" +"%s")
@@ -53,7 +52,7 @@ HORAFINAL01=$(date -u -d "$HORAFINAL" +"%s")
 TEMPO=$(date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S")
 # $0 (variável de ambiente do nome do comando)
 echo "---------------------------------------------------------------------------------------" >>"$LOG"
-echo "Tempo gasto para execução do script: $TEMPO.                                               |" >>"$LOG"
+echo "|Tempo gasto para execução do script: $TEMPO.                                        |" >>"$LOG"
 echo "---------------------------------------------------------------------------------------" >>"$LOG"
 
 cp -rf $dir_log/$arq_log $destino/$current_date

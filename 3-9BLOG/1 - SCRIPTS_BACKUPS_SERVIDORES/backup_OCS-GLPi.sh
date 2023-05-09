@@ -119,7 +119,7 @@ scp -P 173 /mnt/server_backup/backup-ocs_glpi-$(date +%Y%m%d).tar.gz administrad
 # Hora Final
 HORAFINAL=$(date +%T)
 
-echo "Backup Concluído em $HORAFINAL! ---------------------------------------------------------" >>"$LOG"
+echo "|Backup Concluído em $HORAFINAL.                                                          |" >>"$LOG"
 # script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 # opção do comando date: -u (utc), -d (date), +%s (second since 1970)
 HORAINICIAL01=$(date -u -d "$HORAINICIAL" +"%s")
@@ -127,9 +127,11 @@ HORAFINAL01=$(date -u -d "$HORAFINAL" +"%s")
 # opção do comando date: -u (utc), -d (date), 0 (string command), sec (force second), +%H (hour), %M (minute), %S (second),
 TEMPO=$(date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S")
 # $0 (variável de ambiente do nome do comando)
-echo "Tempo gasto para execução do script: $TEMPO.                                             |" >>"$LOG"
+echo "---------------------------------------------------------------------------------------" >>"$LOG"
+echo "|Tempo gasto para execução do script: $TEMPO.                                        |" >>"$LOG"
 echo "---------------------------------------------------------------------------------------" >>"$LOG"
 
+cp -rf $dir_log/$arq_log $destino/$current_date
 rm -Rfv /mnt/server_backup/*.tar.gz
 
 exit 1
