@@ -58,7 +58,7 @@ extensions = {
 }
 
 #Caminho da pasta a ser gerenciada
-path = r"D:\Ari Leal Matos\Downloads"
+#path = r"C:\Users"
 
 class Tela:
 
@@ -92,6 +92,8 @@ class Tela:
                     [sg.popup("Gerencia de Pastas!")]
                     self.janela.hide()
                     # Executa o Gerenciamento de Pastas
+                    print( os.listdir('C:\\Users') )
+                    path = os.getcwd()
                     for extension, folder_name in extensions.items():
                         # Pega todos os arquivos que terminam com a extensão
                         files = glob.glob(os.path.join(path, f"*.{extension}"))
@@ -121,10 +123,10 @@ class Tela:
             if self.button == 'Fechar' or self.button == sg.WIN_CLOSED:
                 break
 
-        login = self.values['login']
-        senha = self.values['senha']
-        print(f'Login: {login}')
-        print(f'Senha: {senha}')
+        #login = self.values['login']
+        #senha = self.values['senha']
+        #print(f'Login: {login}')
+        #print(f'Senha: {senha}')
 
 tela = Tela()
 tela.iniciar()
