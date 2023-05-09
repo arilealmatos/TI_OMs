@@ -1,1 +1,0 @@
-for /F "eol=; delims=," %%i in (users.txt) do net user %%i /random /add /domain /fullname:%%i /active:no >> c:\SCRIPT\senhas.txt
