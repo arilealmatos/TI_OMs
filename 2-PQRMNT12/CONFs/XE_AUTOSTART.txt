@@ -1,0 +1,5 @@
+xe pool-list
+
+xe pool-param-set uuid=fd5dffde-6aa6-158f-2cff-931a8db2e1f2 other-config:auto_poweron=true
+
+ 

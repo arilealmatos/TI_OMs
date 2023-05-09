@@ -1,0 +1,5 @@
+WINDOWS UPDATE VIA PROXY
+Netsh winhttp import proxy source=ie
+
+#se não funcionar:
+Netsh winhttp reset proxy

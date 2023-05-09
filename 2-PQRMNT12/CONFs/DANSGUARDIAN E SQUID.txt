@@ -1,0 +1,1 @@
+https://documentation.clearos.com/content:en_us:kb_o_optimizing_performance_for_proxy_and_content_filter

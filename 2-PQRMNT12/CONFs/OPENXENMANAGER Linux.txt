@@ -1,0 +1,12 @@
+Primeiro passo: instalação das dependências.
+apt-get install python-gtk2 glade python-gtk-vnc python-glade2 python-configobj python-setuptools git
+
+Segundo passo: download do programa.
+git clone https://github.com/OpenXenManager/openxenmanager.git
+
+Terceiro passo: instalação
+cd openxenmanager
+sudo python setup.py install
+
+Quarto passo: teste!
+openxenmanager
