@@ -1,4 +1,4 @@
-# ![TITULO](https://github.com/arilealmatos/TI_OMs/blob/main/Tiulo_GITHUB.png)
+# <CENTER>![TITULO](https://github.com/arilealmatos/TI_OMs/blob/main/Titulo_GITHUB.png)</CENTER>
 
 Repositório criado com o objetivo de compartilhar 
 conteúdo sobre TI nas OMs do EB.
