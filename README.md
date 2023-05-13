@@ -1,4 +1,4 @@
-# ![EB](https://github.com/arilealmatos/TI_OMs/blob/main/EB.png)<CENTER>Repositório de TI OMs</CENTER>![MNTCOM](https://github.com/arilealmatos/TI_OMs/blob/main/Mnt_Com.png)
+# <CENTER>![TITULO](https://github.com/arilealmatos/TI_OMs/blob/main/Tiulo_GITHUB.png)</CENTER>
 
 Repositório criado com o objetivo de compartilhar 
 conteúdo sobre TI nas OMs do EB.
