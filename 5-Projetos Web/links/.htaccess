@@ -1,0 +1,15 @@
+#Order Allow,Deny
+#	Allow from all    
+
+
+order deny,allow
+    deny from all
+    allow from 127.0.0.1 
+    #allow from 10.26.70.1
+    allow from 10.26.70.2
+    allow from 10.26.70.3
+    allow from 10.26.70.5
+    allow from 10.26.70.10
+    allow from 10.26.70.11
+    allow from 10.26.70.15	
+    allow from 10.30.81.0/255.255.224.0

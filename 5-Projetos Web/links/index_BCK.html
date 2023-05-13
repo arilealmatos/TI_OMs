@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<!--
+# ----------------------------------------------------------------- #
+# Nome do Arquivo :   index.html                                    #
+# Descrição       :   gerenciamento unificado de links              #
+# Site            :   http://intranet.9blog.eb.mil.br               #
+# Escrito por     :   1º Sgt L. Matos                               #
+# Manutenido por  :   1º Sgt L. Matos                               #
+# ----------------------------------------------------------------- #
+# Forma de Uso    :   colocar em /var/www/html/links                #
+# ----------------------------------------------------------------- #
+# Histórico       :   v1.0 05/05/2022, 1º Sgt L. Matos:             #
+#                      - Cabeçalho                                  #
+# ----------------------------------------------------------------- #
+# Agradecimentos :                                                  #
+# SecInfor HGeS | TuTI 3ª Cia F Esp | STI PQRMNT12 | STI 9º B Log   #
+# ----------------------------------------------------------------- #
+-->
+
+<head>
+    <style type="text/css">
+        button_new {
+ 	   display: inline-block;
+ 	   border-radius: 6px;
+ 	   background-color: #3d405b;
+ 	   border: none;
+ 	   color: #FFFFFF;
+ 	   text-align: absolute;
+	   font-size: 19px;
+ 	   padding: 16px;
+ 	   width: 160px;
+ 	   transition: all 0.5s;
+ 	   cursor: pointer;
+ 	   margin: 5px;
+	}
+
+	button_new span {
+ 	   cursor: pointer;
+ 	   display: inline-block;
+ 	   position: relative;
+ 	   transition: 0.5s;
+	}
+
+	button_new span:after {
+ 	   content: '\2207';
+           position: right;
+	   opacity: 0;
+ 	   top: 0;
+ 	   right: -15px;
+ 	   transition: 0.5s;
+	}
+
+	button_new:hover span {
+ 	   padding-right: 15px;
+	}
+
+	button_new:hover span:after {
+ 	    opacity: 1;
+ 	    right: 0;
+	}
+    
+        .linha {
+            display: flex;
+            flex-flow: row-wrap;
+        }
+
+        .coluna {
+            width: 18%;
+        }
+
+        .coluna_meio {
+            width: 5%;
+        }
+
+        #esquerda {
+            float: left;
+            width: 366px;
+        }
+
+        #esquerda1 {
+            float: left;
+            width: 355px;
+        }
+
+        .button-blue {
+            background-color: #1197cc;
+            box-shadow: #094c66 4px 4px 0px;
+            border-radius: 8px;
+            transition: transform 200ms, box-shadow 200ms;
+        }
+
+        .button-blue:active {
+            transform: translateY(4px) translateX(4px);
+            box-shadow: #094c66 0px 0px;
+        }
+   
+	*{
+  	font-family: Arial;
+  	box-sizing: content-box;
+	}
+
+	time{
+  	border: 1px solid #f7f7f7;
+  	padding: 4px 12px;
+  	background-color: #3d405b;
+	color: #f7f7f7;
+  	font-size: 2em;
+  	font-weight: 300;
+  	border-radius: 8px;
+	}
+	</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>STI - 9º B Log</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" title="Favicon" />
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div align="center"><img src="logo.png" height="230" width"1200"></div>
+        
+        <div class="row">
+        	<div id="conteudo2-2">
+               
+		<ul class="list-group">
+                    <center>
+			
+			<time>
+			<script src="assets/js/time.js"></script>
+			</time>
+			<h6><center><script src="assets/js/date.js"></script></center></h6>
+                        
+			<li class="list-group-item list-group-item-danger"><B>ACESSO MONITORADO!</B><br>
+                          		                                
+			    <p><B>SOMENTE MILITARES DA STI PERMITIDOS!</B><br>
+                            </p>
+
+                            <u>Administradores: </u><br>
+                            1º SGT L MATOS<br>CB EP BETTIN<br>SD EP MATTANA<br>
+                            <b>Caso haja mudanças nas funções, a lista será alterada.</b>
+                        </li>
+                    </center>
+
+                </ul>
+
+            </div>
+        </div>
+        <br>
+
+        <div class="linha">
+
+            <div class="coluna">
+                <div align="center">
+    
+                    <button_new>
+                        <span class="label">DVRs</span>
+                    </button_new>
+                </div>
+                <br>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.101" rel="nofollow noreferrer noopener external">
+                    <center>GUARDA</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.102" rel="nofollow noreferrer noopener external">
+                    <center>ALMOX</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.103" rel="nofollow noreferrer noopener external">
+                    <center>GARAGEM</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.104" rel="nofollow noreferrer noopener external">
+                    <center>CONFORMIDADE</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.105" rel="nofollow noreferrer noopener external">
+                    <center>APROV</center>
+                </a>
+                <br>
+                <br>
+            </div>
+
+            <div class="coluna_meio">
+            </div>
+
+            <div class="coluna">
+                <div align="center">
+
+                    <button_new>
+                        <span class="label">IMPRESSORAS</span>
+                    </button_new>
+                </div>
+                <br>
+                <br>
+		        <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.80" rel="nofollow noreferrer noopener external">
+                    <center>CENTRAL</center>
+                </a>
+                <br>
+		        <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.93" rel="nofollow noreferrer noopener external">
+                    <center>S1</center>
+                </a>
+                <br>
+		        <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.90" rel="nofollow noreferrer noopener external">
+                    <center>S2</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.94" rel="nofollow noreferrer noopener external">
+                    <center>S3</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.62" rel="nofollow noreferrer noopener external">
+                    <center>ALMOX</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.81" rel="nofollow noreferrer noopener external">
+                    <center>SALC</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.89" rel="nofollow noreferrer noopener external">
+                    <center>CCAP</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.86" rel="nofollow noreferrer noopener external">
+                    <center>MANUTENÇÃO</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.88" rel="nofollow noreferrer noopener external">
+                    <center>SUPRIMENTO</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.67" rel="nofollow noreferrer noopener external">
+                    <center>NPOR-PELAL</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.71" rel="nofollow noreferrer noopener external">
+                    <center>NPOR-SGTE</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.82" rel="nofollow noreferrer noopener external">
+                    <center>APROV</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.87" rel="nofollow noreferrer noopener external">
+                    <center>CONFORMIDADE</center>
+                </a>
+                <br>
+                <!--<a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.68" rel="nofollow noreferrer noopener external">
+                    <center>DIVPESSOAL</center>
+                </a>
+                <br>-->
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.95" rel="nofollow noreferrer noopener external">
+                    <center>GRCP</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.61" rel="nofollow noreferrer noopener external">
+                    <center>PRM</center>
+                </a>
+                <br>
+		<br>
+            </div>
+
+            
+            <div class="coluna_meio">
+            </div>
+
+            <div class="coluna">
+                <div align="center">
+
+                    <button_new>
+                        <span class="label">SERVIÇOS</span>
+                    </button_new>
+                </div>
+                <br>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://suporte.1cta.eb.mil.br" rel="nofollow noreferrer noopener external">
+                    <center>SUPORTE 1CTA</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.68.4/intranet/administrator/" rel="nofollow noreferrer noopener external">
+                    <center>INTRANET ADM</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://www.9blog.eb.mil.br/administrator/" rel="nofollow noreferrer noopener external">
+                    <center>INTERNET ADM</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://www.sispit.eb.mil.br/pit/www/modulos/principal/pagina_principal.php"
+                    rel="nofollow noreferrer noopener external">
+                    <center>SISPIT</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://comprasnet.gov.br/acesso.asp?url=/livre/pregao/ata0.asp"
+                    rel="nofollow noreferrer noopener external">
+                    <center>PREGOES</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://doacoes.gov.br/login" rel="nofollow noreferrer noopener external">
+                    <center>DOACOES.GOV</center>
+                </a>
+                <br>
+		<a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://academia-escom.eb.mil.br/ircc/"
+                    rel="nofollow noreferrer noopener external">
+                    <center>IRCC</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://www.netacad.com/pt-br"
+                    rel="nofollow noreferrer noopener external">
+                    <center>CISCO</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://ensino.1cta.eb.mil.br/"
+                    rel="nofollow noreferrer noopener external">
+                    <center>EAD 1CTA</center>
+                </a>
+                <br>
+		<a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://ensino.3cta.eb.mil.br/"
+                    rel="nofollow noreferrer noopener external">
+                    <center>EAD 3CTA</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://ead.5cta.eb.mil.br/"
+                    rel="nofollow noreferrer noopener external">
+                    <center>EAD 5CTA</center>
+                </a>
+                <br>
+		<a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://ensino.52ct.eb.mil.br/"
+                    rel="nofollow noreferrer noopener external">
+                    <center>EAD 52CT</center>
+                </a>
+                <br>
+		<a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://ava-enadciber.eb.mil.br/login/index.php"
+                    rel="nofollow noreferrer noopener external">
+                    <center>ENaDCiber</center>
+                </a>
+                <br>
+
+            </div>
+
+
+            <div class="coluna_meio">
+            </div>
+            
+	    <div class="coluna">
+                <div align="center">
+
+                    <button_new>
+                        <span class="label">SERVIDORES</span>
+                    </button_new>
+                </div>
+                <br>
+                <br>
+                <!--<a type="button" class="btn btn-success btn-lg btn-block" target="_blank" href="https://10.26.68.2:8443" rel="nofollow noreferrer noopener external">Zentyal</a>
+                    <br>-->
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.2:8443" rel="nofollow noreferrer noopener external">
+                    <center>ZENTYAL</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.68.250" rel="nofollow noreferrer noopener external">
+                    <center>ZABBIX</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.68.30/ocsreports" rel="nofollow noreferrer noopener external">
+                    <center>OCS Inventory</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.68.200/TeamPass/index.php" rel="nofollow noreferrer noopener external">
+                    <center>TEAMPASS</center>
+                </a>
+		<br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.2:9090" rel="nofollow noreferrer noopener external">
+                    <center>ZENTYAL(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.3:9090" rel="nofollow noreferrer noopener external">
+                    <center>BACKUP(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.4:9090" rel="nofollow noreferrer noopener external">
+                    <center>INTRANET(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.5:9090" rel="nofollow noreferrer noopener external">
+                    <center>RANCHO(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.6:9090" rel="nofollow noreferrer noopener external">
+                    <center>BACKUP2(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.10:9090" rel="nofollow noreferrer noopener external">
+                    <center>APTCACHER(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.16:9090" rel="nofollow noreferrer noopener external">
+                    <center>SPED(Cockpit)</center>
+                </a>
+		<br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.26:9090" rel="nofollow noreferrer noopener external">
+                    <center>SACVOM(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.30:9090" rel="nofollow noreferrer noopener external">
+                    <center>OCS-GLPi(Cockpit)</center>
+                </a>
+                <br>
+                <!--<a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.100:9090" rel="nofollow noreferrer noopener external">
+                    <center>XOCE(Cockpit)</center>
+                </a>
+                <br>-->
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.200:9090" rel="nofollow noreferrer noopener external">
+                    <center>TeamPass(Cockpit)</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="https://10.26.68.250:9090" rel="nofollow noreferrer noopener external">
+                    <center>ZABBIX(Cockpit)</center>
+                </a>
+                <br>
+                
+            </div>
+
+	    <div class="coluna_meio">
+	    </div>
+
+            <div class="coluna">
+                <div align="center">
+                    
+                    <button_new>
+                        <span class="label">SWITCHS</span>
+                    </button_new>
+                </div>
+                <br>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.10" rel="nofollow noreferrer noopener external">
+                    <center>STI-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.11" rel="nofollow noreferrer noopener external">
+                    <center>STI-02</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.12" rel="nofollow noreferrer noopener external">
+                    <center>S1-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.13" rel="nofollow noreferrer noopener external">
+                    <center>NPOR-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.14" rel="nofollow noreferrer noopener external">
+                    <center>CCAP-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.15" rel="nofollow noreferrer noopener external">
+                    <center>MNT-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.16" rel="nofollow noreferrer noopener external">
+                    <center>PELAP-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.17" rel="nofollow noreferrer noopener external">
+                    <center>PRM-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.18" rel="nofollow noreferrer noopener external">
+                    <center>SUP-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.19" rel="nofollow noreferrer noopener external">
+                    <center>GCE-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.21" rel="nofollow noreferrer noopener external">
+                    <center>GUARDA-01</center>
+                </a>
+                <br>
+                <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.22" rel="nofollow noreferrer noopener external">
+                    <center>APROV-01</center>
+                </a>
+                <br>
+		        <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                    href="http://10.26.69.23" rel="nofollow noreferrer noopener external">
+                    <center>ALMOX-01</center>
+                </a>
+		        <br>
+            </div>
+
+
+            <div class="coluna_meio">
+	        </div>
+
+            <div class="coluna">
+                <div align="center">
+                    <button_new>
+                        <span class="label">TELEFONIA</span>
+                    </button_new>
+                </div>
+                    <br>
+                    <br>
+                    <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                        href="http://10.26.71.251/action/doLogin.php" rel="nofollow noreferrer noopener external">
+                        <center>DIGITRO</center>
+                    </a>
+                    <br>
+                    <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                        href="http://10.26.68.252/snep/index.php" rel="nofollow noreferrer noopener external">
+                        <center>SNEP</center>
+                    </a>
+                    <br>
+                    <a type="button" class="button-blue button-blue-active btn-success btn-lg btn-block" target="_blank"
+                        href="https://10.26.68.254" rel="nofollow noreferrer noopener external">
+                        <center>INTELBRAS</center>
+                    </a>
+                    <br>
+            </div>
+	</div>
+    </div>
+
+    <h6 align="center"><a target="a_blank" rel="nofollow noreferrer noopener external"
+            href="http://intranet.9blog.eb.mil.br">INTRANET</a></h6>	
+    <!--<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- require_once all compiled plugins (below), or require_once individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+<!--<footer>
+	<div align="center"><img src="footer.png" width"1100"></div>
+</footer>-->
+
+</html>
