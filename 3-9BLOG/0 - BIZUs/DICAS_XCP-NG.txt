@@ -1,0 +1,106 @@
+### DICAS XCP-NG
+
+## Atualização de Servidor via Proxy:
+
+Será consiredado neste artigo: ip do proxy 192.168.0.1 e porta 3128 com proxy transparente, usaremos aqui o editor "vi".
+
+Edite o arquivo /etc/yum.conf
+
+vi /etc/yum.conf
+Insira no final do arquivo as seuintes linhas, salve e saia
+
+# The proxy server - proxy server:port number
+proxy=http://192.168.0.1:3128
+Insira no final do arquivo .bash_profile as seguintes linhas. Salve e saia.
+
+vi /root/.bash_profile
+export http_proxy=http://192.168.0.1:3128
+export https_proxy=http://192.168.0.1:3128
+Insira no final do arquivo wgetrc as seguintes inhas. Salve e saia.
+
+vi /etc/wgetrc
+#proxy configuratios
+http_proxy= http://192.168.0.1:3128
+https_proxy= http://192.168.0.1:3128
+ftp_proxy= http://192.168.0.1:3128
+Insira no final do arquivo profile as seguintes inhas. Salve e saia.
+
+vi /etc/profile
+export http_proxy=http://192.168.0.1:3128
+export https_proxy=http://192.168.0.1:3128
+Linhas para o arquivo profile /etc/environment. Salve e saia.
+
+vi /etc/environment
+http_proxy="http://192.168.0.1:3128"
+https_proxy="http://1192.168.0.1:3128"
+ftp_proxy="ftp://192.168.0.1:3128"
+no_proxy=localhost,127.0.0.1/8
+export http_proxy https_proxy ftp_proxy
+yum update
+
+## Criar Repositório ISO
+
+mkdir /CAMINHO_DA_PASTA
+
+xe sr-create name-label=REPOSITORIO_ISO type=iso device-config:legacy_mode=true device-config:location=/CAMINHO_DA_PASTA content-type=iso
+
+## Comandos Úteis
+
+Listar Maquinas Virtuais (VMs):
+
+xe vm-list
+
+Listar discos das Maquinas Virtuais:
+
+xe vm-disk-list --multiple
+
+Configurar Pool para iniciar automaticamente:
+
+xe pool-param-set uuid=uuid_pool other-config:auto_poweron=true
+
+Configurar VM para iniciar automaticamente (auto start) após o boot do XenServer:
+
+xe vm-param-set other-config:auto_poweron=true uuid=uuid_da_vm
+
+Remover configuração de “auto start” das Maquinas Virtuais:
+
+xe vm-param-remove param-key=auto_poweron param-name=other-config uuid=uuid_da_vm
+
+Listar Templates de Sistemas Operacionais:
+
+xe template-list
+
+Excluir um Template:
+
+xe template-param-set other-config:default_template=false uuid=uuid_do_template
+xe template-param-set is-a-template=false uuid=uuid_do_template
+xe vm-destroy uuid=uuid_do_template
+
+Desligar uma Maquina Virtual:
+
+xe vm-shutdown vm=nome_da_vm
+
+Iniciar uma Maquina Virtual:
+
+xe vm-start vm=nome_da_vm
+
+Resetar o Estado da VM:
+
+xe vm-reset-powerstate uuid=uuid_da_vm
+
+Listar Tarefas do Citrix XenServer:
+
+xe task-list
+
+Cancelar uma tarefa:
+
+xe task-cancel uuid=<tarefa>
+
+Limpar todas as tarefas pendentes:
+
+xe-toolstack restart
+
+## Reiniciar Servidor Após Falta de Energia
+
+xe pool-list
+xe pool-param-set uuid=52895590-54a4-d19c-b864-f436bd647768 other-config:auto_poweron=true
