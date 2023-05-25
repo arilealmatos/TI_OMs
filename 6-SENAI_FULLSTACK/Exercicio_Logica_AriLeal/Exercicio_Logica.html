@@ -1,0 +1,37 @@
+<script>
+    // Entrada de Saldo
+    saldo = parseInt(prompt("Informe o Saldo Inicial"));
+    document.write("Saldo Inicial: " + saldo + "<br>");
+    encerrar = "N";
+    //Executa os testes do While
+    while(encerrar == "N")
+    {
+    //Entrada de Tipo
+    tipo = parseInt(prompt("Informe o Tipo de Entrada"));
+    //Entrada de Quantidade
+    quantidade = parseInt(prompt("Informe a Quantidade"));
+    if(tipo == 1)
+    {
+    saldo = saldo + quantidade;
+    document.write("Entrada: " + quantidade + "<br>");
+    }
+    if(tipo == 2)
+    {
+    if(saldo >= quantidade)
+    {
+    saldo = saldo - quantidade;
+    document.write("Saída: " + quantidade +
+    "<br>");
+    }
+    else
+    {
+    //Informa Saldo Insuficiente
+    document.write("Saldo Insuficiente" + "<br>");
+    alert("Saldo insuficiente");
+    }
+    }
+    document.write("Saldo: " + saldo + "<br>");
+    encerrar = prompt("Deseja Encerrar ? (S/N)");
+    }
+    document.write("Sistema Encerrado!" + "<br>");
+</script>
