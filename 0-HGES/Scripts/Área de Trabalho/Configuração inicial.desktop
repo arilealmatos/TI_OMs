@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=user-first-config
+Icon=/usr/share/icons/Windows10/scalable/emblems/emblem-ok-symbolic.svg
+Exec=/usr/share/HGeS/Configuração\\ inicial.sh
+Name[pt_BR]=Configuração inicial

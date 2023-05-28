@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=user-first-config
+Icon=/usr/share/icons/Windows10/scalable/emblems/emblem-system-symbolic.svg
+Exec=/usr/share/HGeS/Opções\ do\ Administrador.sh
+Name[pt_BR]=Opções de Administrador

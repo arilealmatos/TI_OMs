@@ -1,0 +1,6 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=user-first-config
+Icon=
+Exec=/usr/share/HGeS/user-first-config.sh
