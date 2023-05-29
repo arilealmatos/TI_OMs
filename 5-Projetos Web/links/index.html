@@ -21,7 +21,11 @@
 
 <head>
     <style type="text/css">
-        button_new {
+        html{
+  	    --background: white;
+	}
+	
+	button_new {
  	   display: inline-block;
  	   border-radius: 6px;
  	   background-color: #3d405b;
@@ -97,24 +101,24 @@
         }
    
 	*{
-  	font-family: Arial;
-  	box-sizing: content-box;
+  	    font-family: Arial;
+  	    box-sizing: content-box;
 	}
 
 	time{
-  	border: 1px solid #f7f7f7;
-  	padding: 4px 12px;
-  	background-color: #3d405b;
-	color: #f7f7f7;
-  	font-size: 2em;
-  	font-weight: 300;
-  	border-radius: 8px;
+  	    border: 1px solid #f7f7f7;
+  	    padding: 4px 12px;
+  	    background-color: #3d405b;
+	    color: #f7f7f7;
+  	    font-size: 2em;
+  	    font-weight: 300;
+  	    border-radius: 8px;
 	}
 	</style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>STI - 9º B Log</title>
     <link rel="icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico" title="Favicon" />
@@ -122,10 +126,23 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/estilo.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+    <!--<script src="assets/js/script.js"></script>-->
 </head>
 
 <body>
-    <div class="container">
+    
+     <header>
+	<script src="assets/js/darkmode-js.min.js"></script>
+	<script>
+  		function addDarkmodeWidget() {
+    		new Darkmode().showWidget();
+  		}
+  		window.addEventListener('load', addDarkmodeWidget);
+	</script>    
+     </header>
+     
+     <main>
+     <div class="container">
         <div align="center"><img src="logo.png" height="230" width"1200"></div>
         
         <div class="row">
@@ -587,17 +604,21 @@
             </div>
 	</div>
     </div>
+    </main>
 
+    <!--
     <h6 align="center"><a target="a_blank" rel="nofollow noreferrer noopener external"
             href="http://intranet.9blog.eb.mil.br">INTRANET</a></h6>	
-    <!--<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    jQuery (necessary for Bootstrap's JavaScript plugins)
     <script src="assets/js/jquery.min.js"></script>
-    <!-- require_once all compiled plugins (below), or require_once individual files as needed -->
+    require_once all compiled plugins (below), or require_once individual files as needed
     <script src="assets/js/bootstrap.min.js"></script>
+    -->
 </body>
 
-<!--<footer>
-	<div align="center"><img src="footer.png" width"1100"></div>
-</footer>-->
+<footer> 
+     <h6 align="center"><a target="a_blank" rel="nofollow noreferrer noopener external"
+         href="http://intranet.9blog.eb.mil.br">INTRANET</a></h6> 
+     </footer>
 
 </html>
