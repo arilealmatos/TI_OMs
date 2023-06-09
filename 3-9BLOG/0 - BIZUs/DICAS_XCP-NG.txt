@@ -6,37 +6,39 @@ Será consiredado neste artigo: ip do proxy 192.168.0.1 e porta 3128 com proxy t
 
 Edite o arquivo /etc/yum.conf
 
-vi /etc/yum.conf
+nano /etc/yum.conf
 Insira no final do arquivo as seuintes linhas, salve e saia
 
 # The proxy server - proxy server:port number
 proxy=http://192.168.0.1:3128
 Insira no final do arquivo .bash_profile as seguintes linhas. Salve e saia.
 
-vi /root/.bash_profile
+nano /root/.bash_profile
 export http_proxy=http://192.168.0.1:3128
 export https_proxy=http://192.168.0.1:3128
 Insira no final do arquivo wgetrc as seguintes inhas. Salve e saia.
 
-vi /etc/wgetrc
+nano /etc/wgetrc
 #proxy configuratios
 http_proxy= http://192.168.0.1:3128
 https_proxy= http://192.168.0.1:3128
 ftp_proxy= http://192.168.0.1:3128
 Insira no final do arquivo profile as seguintes inhas. Salve e saia.
 
-vi /etc/profile
+nano /etc/profile
 export http_proxy=http://192.168.0.1:3128
 export https_proxy=http://192.168.0.1:3128
 Linhas para o arquivo profile /etc/environment. Salve e saia.
 
-vi /etc/environment
+nano /etc/environment
 http_proxy="http://192.168.0.1:3128"
 https_proxy="http://1192.168.0.1:3128"
 ftp_proxy="ftp://192.168.0.1:3128"
 no_proxy=localhost,127.0.0.1/8
 export http_proxy https_proxy ftp_proxy
+
 yum update
+yum clean all && yum update
 
 ## Criar Repositório ISO
 
@@ -55,7 +57,7 @@ Listar discos das Maquinas Virtuais:
 xe vm-disk-list --multiple
 
 Configurar Pool para iniciar automaticamente:
-
+xe pool-list
 xe pool-param-set uuid=uuid_pool other-config:auto_poweron=true
 
 Configurar VM para iniciar automaticamente (auto start) após o boot do XenServer:
