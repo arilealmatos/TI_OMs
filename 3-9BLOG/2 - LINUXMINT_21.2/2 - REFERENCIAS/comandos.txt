@@ -1,0 +1,183 @@
+    1  cd Área\ de\ Trabalho/
+    2  ls
+    3  cd Ultimate-Linux-Mint-Cinnamon-21.2-main/
+    4  ls
+    5  ./0-current-selection.sh 
+    6  sudo add-apt-repository ppa:mozillateam/ppa
+    7  sudo add-apt-repository -y ppa:libreoffice/ppa
+    8  apt update
+    9  apt upgrade -y
+   10  clear
+   11  sudo apt-get install libreoffice libreoffice-l10n-pt-br libreoffice-style-breeze --install-recommends
+   12  apt install gparted
+   13  apt install gparted --install-recommends
+   14  ifconfig
+   15  clear
+   16  cd ..
+   17  ls
+   18  clear
+   19  sudo apt install software-properties-common
+   20  apt install grub-customizer
+   21  sudo add-apt-repository ppa:trebelnik-stefina/grub-customizer
+   22  apt update
+   23  apt upgrade -y
+   24  apt install grub-customizer --install-recommends
+   25  apt install sddm
+   26  apt install sddm --install-recommends
+   27  exit
+   28  passwd root
+   29  sudo apt install firefox-esr
+   30  sudo apt install firefox-esr --install-recommends
+   31  add-apt-repository ppa:emoraes25/cid && apt-get update
+   32  apt-get install cid cid-gtk --install-recommends
+   33  cd Documentos/
+   34  ls
+   35  cd LINUXMINT_21.2/
+   36  ls
+   37  cd Temas/
+   38  ls
+   39  cd We10XOS-cursors-master/
+   40  ls
+   41  ./install.sh 
+   42  cd ..
+   43  cd Win11-icon-theme-main/
+   44  ls
+   45  ./install.sh 
+   46  cd ..
+   47  exit
+   48  nemo
+   49  exit
+   50  cd /home/administrador/
+   51  ls
+   52  cd Documentos/
+   53  ls
+   54  cd LINUXMINT_21.2/
+   55  ls
+   56  cd systemback-1.9.4hamonikr9/
+   57  ls
+   58  dpkg -i *deb
+   59  apt-get -f install
+   60  apt install xorriso xfonts-cyrillic
+   61  apt install xorriso xfonts-cyrillic --install-recommends
+   62  exit
+   63  update-initramfs
+   64  update-initramfs -u
+   65  sudo apt install plymouth-themes
+   66  sudo update-alternatives --config default.plymouth
+   67  nemo
+   68  exit
+   69  cd /usr/share/9BLOG/
+   70  ls
+   71  ./Atualizar.sh 
+   72  apt install zenity
+   73  apt install yad
+   74  apt install ntpdate
+   75  ./Atualizar.sh 
+   76  exit
+   77  nemo
+   78  apt install sddm-theme*
+   79  apt install sddm-theme* --install-recommends
+   80  apt update && apt upgrade -y
+   81  exit
+   82  nemo
+   83  exit
+   84  nemo
+   85  exit
+   86  nemo
+   87  apt update && apt upgrade -y
+   88  exit
+   89  nemo
+   90  exit
+   91  nemo
+   92  exit
+   93  apt update && apt upgrade -y
+   94  apt upgrade -y
+   95  apt update && apt upgrade -y
+   96  cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+   97  nano /etc/sysctl.conf
+   98  sudo sysctl -p
+   99  cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+  100  exit
+  101  sudo dpkg --add-architecture i386
+  102  sudo mkdir -pm755 /etc/apt/keyrings
+  103  sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+  104  sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+  105  apt update
+  106  apt upgrade -y
+  107  apt-get install unionfs-fuse
+  108  apt-get install live-boot
+  109  apt-get install live-boot --install-recommends
+  110  apt-get remove casper
+  111  apt-get install grub2-common grub-efi-amd64-bin grub-pc-bin --install-recommends
+  112  add-apt-repository ppa:nemh/systemback
+  113  apt install ocsinventory-agent
+  114  apt install ocsinventory-agent --install-recommends
+  115  apt install libmodule-install-perl dmidecode libxml-simple-perl libcompress-zlib-perl libnet-ip-perl libwww-perl libdigest-md5-perl libdata-uuid-perl --install-recommends
+  116  ocsinventory-agent 
+  117  exit
+  118  sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+  119  sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+  120  wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+  121  apt update
+  122  sudo apt install --install-recommends winehq-stable
+  123  nano /etc/apt/apt.conf.d/00aptproxy
+  124  exit
+  125  sudo apt install --install-recommends winehq-stable
+  126  exit
+  127  nemo
+  128  exit
+  129  nemo
+  130  echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/home:stevenpusser.list
+  131  curl -fsSL https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_stevenpusser.gpg > /dev/null
+  132  apt update
+  133  apt upgrade -y
+  134  apt install palemoon
+  135  cd Downloads/
+  136  ls
+  137  dpkg -i nomachine_8.8.1_1_amd64.deb 
+  138  apt update && apt upgrade -y
+  139  ocsinventory-agent 
+  140  apt update && apt upgrade -y
+  141  clear
+  142  java -version
+  143  sudo add-apt-repository ppa:linuxuprising/java
+  144  apt update
+  145  apt upgrade -y
+  146  echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu focal main" | tee /etc/apt/sources.list.d/linuxuprising-java.list
+  147  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A
+  148  apt update
+  149  apt upgrade -y
+  150  apt install oracle-java17-installer --install-recommends
+  151  java -version
+  152  ls
+  153  dpkg -i 'SafeSign IC Standard Linux 3.8.0.0-AET.000 ub2204 x86_64.deb' 
+  154  apt-get -f install
+  155  ls
+  156  dpkg -i instalador-certificado-serpro-1.0.0-amd64.deb 
+  157  apt update
+  158  apt-get install libfontconfig1 libfreetype6 libice6 libsm6 libx11-6 libx11-xcb1 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-shm0 libxcb1 libxcb-sync1 libxcb-xfixes0 libxcb-xkb1 libxi6 libxml2 libxcb-xinerama0 gcc-multilib lib32atomic1 lib32gomp1 lib32itm1 lib32quadmath0 lib32stdc++6 libc6-dev-x32 libc6-x32 libx32atomic1 libx32gomp1 libx32itm1 libx32quadmath0 libx32stdc++6 libc6-dev-i386 libc6-i386 -y
+  159  apt-get install -y build-essential libc6 libc6-dev wget -y
+  160  apt install yad
+  161  exit
+  162  nemo
+  163  exit
+  164  wget -qO- https://assinadorserpro.estaleiro.serpro.gov.br/repository/AssinadorSERPROpublic.asc | sudo tee /etc/apt/trusted.gpg.d/AssinadorSERPROpublic.asc
+  165  sudo add-apt-repository 'deb https://assinadorserpro.estaleiro.serpro.gov.br/repository/ universal stable'
+  166  clear
+  167  apt update
+  168  sudo add-apt-repository 'deb https://assinadorserpro.estaleiro.serpro.gov.br/repository/ universal stable'
+  169  apt update
+  170  apt install assinador-serpro
+  171  apt install assinador-serpro --install-recommends
+  172  exit
+  173  nano /etc/apt/apt.conf.d/00aptproxy
+  174  nano /etc/wgetrc 
+  175  exit
+  176  apt install seahorse
+  177  nemo
+  178  apt update && apt upgrade -y
+  179  nano /etc/apt/apt.conf.d/00aptproxy
+  180  nemo
+  181  exit
+  182  nemo
+  183  history > comandos.txt

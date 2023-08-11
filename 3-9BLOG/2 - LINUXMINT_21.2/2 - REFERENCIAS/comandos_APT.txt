@@ -1,0 +1,15 @@
+apt install gparted --install-recommends
+apt install software-properties-common
+apt install seahorse
+apt install sddm --install-recommends
+apt install sddm-theme* --install-recommends
+apt install plymouth-themes*
+update-alternatives --config default.plymouth
+apt install zenity
+apt install yad
+apt install ntpdate
+
+apt install libmodule-install-perl dmidecode libxml-simple-perl libcompress-zlib-perl libnet-ip-perl libwww-perl libdigest-md5-perl libdata-uuid-perl --install-recommends
+apt install libcrypt-ssleay-perl libnet-snmp-perl libproc-pid-file-perl libproc-daemon-perl net-tools libsys-syslog-perl pciutils smartmontools read-edid nmap libnet-netmask-perl --install-recommends
+apt-get install libfontconfig1 libfreetype6 libice6 libsm6 libx11-6 libx11-xcb1 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render0 libxcb-render-util0 libxcb-shape0 libxcb-shm0 libxcb1 libxcb-sync1 libxcb-xfixes0 libxcb-xkb1 libxi6 libxml2 libxcb-xinerama0 gcc-multilib lib32atomic1 lib32gomp1 lib32itm1 lib32quadmath0 lib32stdc++6 libc6-dev-x32 libc6-x32 libx32atomic1 libx32gomp1 libx32itm1 libx32quadmath0 libx32stdc++6 libc6-dev-i386 libc6-i386 -y
+apt-get install -y build-essential libc6 libc6-dev wget -y

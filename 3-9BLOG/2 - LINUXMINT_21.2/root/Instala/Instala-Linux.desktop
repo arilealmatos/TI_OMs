@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Instala-Linux
+Icon=applications-system
+Exec=pkexec ubiquity gtk_ui
+

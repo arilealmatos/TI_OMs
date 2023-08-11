@@ -1,0 +1,89 @@
+Referência:https://wiki.ocsinventory-ng.org/03.Basic-documentation/Setting-up-the-UNIX-agent-manually-on-client-computers/
+Arquivos:https://github.com/OCSInventory-NG/UnixAgent/releases
+
+PASSO A PASSO:
+$ sudo tar –xvzf Ocsinventory-Unix-Agent-2.x.y.tar.gz
+$ sudo cd Ocsinventory-Unix-Agent-2.x.y
+$ sudo perl Makefile.PL
+$ sudo make
+$ sudo make install
+
+Do you want to configure the agent
+Please enter 'y' or 'n'?> [y] y
+
+Where do you want to write the configuration file?
+0 -> /etc/ocsinventory
+1 -> /usr/local/etc/ocsinventory
+2 -> /etc/ocsinventory-agent
+?>  2
+
+Do you want to create the directory /etc/ocsinventory-agent?
+Please enter 'y' or 'n'?> [y] y
+
+Should the old unix_agent settings be imported ?
+Please enter 'y' or 'n'?> [y] y
+
+[info] The config file will be written in /etc/ocsinventory-agent/ocsinventory-agent.cfg,
+
+What is the address of your ocs server?>  https://ENDEREÇO_IP/ocsinventory
+
+Do you need credential for the server? (You probably don't)
+Please enter 'y' or 'n'?> [n]
+
+Do you want to apply an administrative tag on this machine
+Please enter 'y' or 'n'?> [y]
+tag?>  NA
+
+Do yo want to install the cron task in /etc/cron.d
+Please enter 'y' or 'n'?> [y]
+
+Where do you want the agent to store its files? (You probably don't need to change it)?> [/var/lib/ocsinventory-agent]
+
+Should I remove the old unix_agent
+Please enter 'y' or 'n'?> [n]
+
+Do you want to activate debug configuration option ?
+Please enter 'y' or 'n'?> [y] y
+
+Do you want to use OCS Inventory NG UNix Unified agent log file ?
+Please enter 'y' or 'n'?> [n]
+
+Specify log file path you want to use?>  
+
+Do you want disable SSL CA verification configuration option (not recommended) ?
+Please enter 'y' or 'n'?> [n]
+
+Do you want to set CA certificate chain file path ?
+Please enter 'y' or 'n'?> [y] n
+
+Specify CA certificate chain file path?>  
+
+Do you want to use OCS-Inventory software deployment feature?
+Please enter 'y' or 'n'?> [y]
+
+Do you want to use OCS-Inventory SNMP scans feature?
+Please enter 'y' or 'n'?> [y]
+
+Do you want to send an inventory of this machine?
+Please enter 'y' or 'n'?> [y]
+
+## Após instalação editar:
+$ sudo nano /var/lib/ocsinventory-agent/http:_ENDEREÇOIP_ocsinventory/ocsinv.adm
+<?xml version="1.0" encoding="UTF-8"?>
+<ADM>
+ <ACCOUNTINFO>
+  <KEYNAME>TAG</KEYNAME>
+  <KEYVALUE>NA</KEYVALUE>
+ </ACCOUNTINFO>
+</ADM>
+
+$ sudo nano /etc/ocsinventory/ocsinventory-agent.cfg
+basevardir=/var/lib/ocsinventory-agent
+server=http://ENDEREÇO_IP/ocsinventory
+#tag=NA
+#snmptimeout=3
+debug=1
+#snmp=1
+nosoftware=0
+#snmpretry=2
+ssl=0

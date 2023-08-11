@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=lembrete
+Icon=1E64_notepad.0
+Exec=/usr/share/9BLOG/lembrete.sh

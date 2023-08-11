@@ -1,0 +1,158 @@
+﻿# Changelog
+
+# ------------------------------------------------------------------------------------- #
+# Nome do Arquivo :   Changelog.txt                                                     #
+# Descrição       :   Modificaçoes e Atualizações.                                      #
+# Site            :   http://intranet.9blog.eb.mil.br                                   #
+# Escrito por     :   1º Sgt L. Matos                                                   #
+# Manutenido por  :   1º Sgt L. Matos                                                   #
+# ------------------------------------------------------------------------------------- #
+# Agradecimentos  :                                                                     #
+# SecInfor HGeS | TuTI 3ª Cia F Esp | STI PQRMNT12 | STI 9º B Log                       #
+# ------------------------------------------------------------------------------------- #
+# Todas as modificacoes importantes deste projeto estarao documentadas neste arquivo.
+
+# The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+# and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## LinuxMint 21.2 9º B Log
+
+# [V_01_23] - 01-08-2023
+
+### Adicionado
+- Firefox ESR.
+- Otimizador PDF.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Localização Sources.list.
+
+### Removido
+
+## [/V_01_23]
+
+
+## LinuxMint 21.1 9º B Log
+
+# [V_06_23] - 20-06-2023
+
+### Adicionado
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Localização Sources.list.
+
+### Removido
+
+## [/V_06_23]
+
+# [V_05_23] - 14-06-2023
+
+### Adicionado
+- Drivers EPSON.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+- Icone sddm.
+- Apt update.
+
+### Removido
+
+## [/V_05_23]
+
+# [V_04_23] - 13-06-2023
+
+### Adicionado
+- Wine 8.01.
+- Siscofis.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_04_23]
+
+
+# [V_03_23] - 06-06-2023
+
+### Adicionado
+- Suporte Python3.11.
+- EBChat.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_03_23]
+
+
+# [V_02_23] - 06-06-2023
+
+### Adicionado
+- Suporte Python3.11.
+- EBChat.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_02_23]
+
+# [V_01_23] - 05-06-2023
+
+### Adicionado
+- Google Chrome.
+- Grub-Customizer.
+- Nomachine.
+- Java Runtime 8.
+- CID.
+- HPLIP.
+- SDDM.
+- OCSInventory.
+- Papéis de parede.
+- Lembrete.
+- Systemback 1.9.4 Hamonikr.
+- Token.
+- Certificados.
+- Gimp.
+- Palemoon.
+
+### Modificado
+- Scripts.
+- Nome dos Scripts.
+- /etc/skell.
+
+### Consertado
+
+### Removido
+
+## [/V_01_23]
+
+

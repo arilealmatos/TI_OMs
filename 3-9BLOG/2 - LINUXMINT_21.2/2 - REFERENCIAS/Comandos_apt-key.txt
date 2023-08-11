@@ -1,0 +1,8 @@
+sudo apt-key export F0AF3862 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/OCS.gpg
+8719FCE4
+
+sudo apt-key export 8719FCE4 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/PALEMOON.gpg
+
+5C3125F4
+
+sudo apt-key export 5C3125F4 | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/CID.gpg

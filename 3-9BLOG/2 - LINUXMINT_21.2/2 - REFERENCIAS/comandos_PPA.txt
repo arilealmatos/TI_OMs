@@ -1,0 +1,128 @@
+    1  cd Área\ de\ Trabalho/
+    2  ls
+    3  cd Ultimate-Linux-Mint-Cinnamon-21.2-main/
+    4  ls
+    5  ./0-current-selection.sh 
+    6  sudo add-apt-repository ppa:mozillateam/ppa
+    7  sudo add-apt-repository -y ppa:libreoffice/ppa
+    8  apt update
+    9  apt upgrade -y
+   10  
+   11  sudo apt-get install libreoffice libreoffice-l10n-pt-br libreoffice-style-breeze --install-recommends
+
+
+   31  add-apt-repository ppa:emoraes25/cid && apt-get update
+   32  apt-get install cid cid-gtk --install-recommends
+   33  cd Documentos/
+   34  ls
+   35  cd LINUXMINT_21.2/
+   36  ls
+   37  cd Temas/
+   38  ls
+   39  cd We10XOS-cursors-master/
+   40  ls
+   41  ./install.sh 
+   42  cd ..
+   43  cd Win11-icon-theme-main/
+   44  ls
+   45  ./install.sh 
+
+
+   54  cd LINUXMINT_21.2/
+   55  ls
+   56  cd systemback-1.9.4hamonikr9/
+       apt-get install unionfs-fuse
+  108  apt-get install live-boot
+  109  apt-get install live-boot --install-recommends
+  110  apt-get remove casper
+  111  apt-get install grub2-common grub-efi-amd64-bin grub-pc-bin --install-recommends
+  112  add-apt-repository ppa:nemh/systemback
+   57  ls
+   58  dpkg -i *deb
+   59  apt-get -f install
+   60  apt install xorriso xfonts-cyrillic
+   61  apt install xorriso xfonts-cyrillic --install-recommends
+   62  exit
+   63  update-initramfs
+   64  update-initramfs -u
+
+
+   93  apt update && apt upgrade -y
+   94  apt upgrade -y
+   95  apt update && apt upgrade -y
+   96  
+  100  exit
+  101  sudo dpkg --add-architecture i386
+  102  sudo mkdir -pm755 /etc/apt/keyrings
+  103  sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+  104  sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+  105  apt update
+  106  apt upgrade -y
+  107  
+  113  apt install ocsinventory-agent
+  114  apt install ocsinventory-agent --install-recommends
+  115  apt install libmodule-install-perl dmidecode libxml-simple-perl libcompress-zlib-perl libnet-ip-perl libwww-perl libdigest-md5-perl libdata-uuid-perl --install-recommends
+  116  ocsinventory-agent 
+  117  exit
+  118  sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+  119  sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+  120  wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
+  121  apt update
+  122  sudo apt install --install-recommends winehq-stable
+  123  nano /etc/apt/apt.conf.d/00aptproxy
+  124  exit
+  125  sudo apt install --install-recommends winehq-stable
+  126  exit
+  127  nemo
+  128  exit
+  129  nemo
+  130  echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/home:stevenpusser.list
+  131  curl -fsSL https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_stevenpusser.gpg > /dev/null
+  132  apt update
+  133  apt upgrade -y
+  134  apt install palemoon
+  135  cd Downloads/
+  136  ls
+  137  dpkg -i nomachine_8.8.1_1_amd64.deb 
+  138  apt update && apt upgrade -y
+  139  ocsinventory-agent 
+  140  apt update && apt upgrade -y
+  141  clear
+  142  java -version
+  143  sudo add-apt-repository ppa:linuxuprising/java
+  144  apt update
+  145  apt upgrade -y
+  146  echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu focal main" | tee /etc/apt/sources.list.d/linuxuprising-java.list
+  147  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A
+  148  apt update
+  149  apt upgrade -y
+  150  apt install oracle-java17-installer --install-recommends
+  151  java -version
+  152  ls
+  153  dpkg -i 'SafeSign IC Standard Linux 3.8.0.0-AET.000 ub2204 x86_64.deb' 
+  154  apt-get -f install
+  155  ls
+  156  dpkg -i instalador-certificado-serpro-1.0.0-amd64.deb 
+
+  164  wget -qO- https://assinadorserpro.estaleiro.serpro.gov.br/repository/AssinadorSERPROpublic.asc | sudo tee /etc/apt/trusted.gpg.d/AssinadorSERPROpublic.asc
+  165  sudo add-apt-repository 'deb https://assinadorserpro.estaleiro.serpro.gov.br/repository/ universal stable'
+  166  clear
+  167  apt update
+  168  sudo add-apt-repository 'deb https://assinadorserpro.estaleiro.serpro.gov.br/repository/ universal stable'
+  169  apt update
+  170  apt install assinador-serpro
+  171  apt install assinador-serpro --install-recommends
+  
+  EBCHAT
+  Para baixar o EBChat pela linha de comando, executar os seguintes comandos:
+
+wget -O- https://web-msg.eb.mil.br/apt/ebchat.public | gpg --dearmor > ebchat-desktop-keyring.gpg
+cat ebchat-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/ebchat-desktop-keyring.gpg > /dev/null
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/ebchat-desktop-keyring.gpg] https://web-msg.eb.mil.br/apt stable main' | sudo tee -a /etc/apt/sources.list.d/ebchat.list
+sudo apt update && sudo apt install ebchat-desktop
+
+GRUB-CUSTOMIZER
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt install grub-customizer
+
+

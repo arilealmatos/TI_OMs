@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=user-first-config
+Icon=emblem-default
+Exec=/usr/share/9BLOG/user-first-config.sh
+Name[pt_BR]=Configuração inicial

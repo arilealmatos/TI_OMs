@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Administrador
+Icon=emblem-system
+Exec=Opcoes_do_Administrador.sh
+

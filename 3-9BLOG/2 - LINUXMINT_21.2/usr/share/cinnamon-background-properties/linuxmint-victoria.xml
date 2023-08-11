@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "cinnamon-wp-list.dtd">
+<wallpapers>
+    <wallpaper deleted="false">
+        <name>Orchid</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/bfantinatti_orchid.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Bruno Fantinatti</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Rose</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/bfantinatti_rose.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Bruno Fantinatti</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Interior Design</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/bmansuri_interior_design.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Bilal Mansuri</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Greece</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/jgallegos_greece.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Jonathan Gallegos</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Italy</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/jrinke_italy.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Julius Rinke</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Estonia</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/ktaira_estonia.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Kazuki Taira</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Retro</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/lherrera_retro.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Lorenzo Herrera</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Fireworks</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/menerio_fireworks.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Mike Enerio</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Ocean</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mmant_ocean.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Markos Mant</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Rowboat</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mmant_rowboat.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Markos Mant</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Japan</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mmiyagi_japan.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Masahiro Miyagi</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Morocco</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mnohassi_morocco.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Mohamed Nohassi</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Red Mountain</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mnohassi_red_mountain.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Mohamed Nohassi</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Curtain</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mpiwnicki_curtain.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Marek Piwnicki</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Field</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mpiwnicki_field.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Marek Piwnicki</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Smoke</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/mpiwnicki_smoke.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Marek Piwnicki</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Vietnam</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/ndhnhu_vietnam.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Nguyen Dang Hoang Nhu</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Pink</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/pczerwinski_pink.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Pawel Czerwinski</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Turquoise</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/pczerwinski_turquoise.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Pawel Czerwinski</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Dubai</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/tgouw_dubai.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Tim Gouw</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Switzerland</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/tstudler_switzerland.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Timon Studler</artist>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Hepatica</name>
+        <filename>/usr/share/backgrounds/linuxmint-victoria/vfriedl_hepatica.jpg</filename>
+        <options>zoom</options>
+        <shade_type>solid</shade_type>
+        <pcolor>#000000</pcolor>
+        <scolor>#000000</scolor>
+        <artist>Vanessa Friedl</artist>
+    </wallpaper>
+</wallpapers>

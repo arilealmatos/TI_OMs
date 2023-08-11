@@ -1,0 +1,10 @@
+MONO
+sudo mkdir /opt/wine-stable/share/wine/mono
+sudo wget -O - https://dl.winehq.org/wine/wine-mono/8.0.0/wine-mono-8.0.0-dbgsym.tar.xz | sudo tar -xJv -C /opt/wine-stable/share/wine/mono
+
+GECKO
+sudo mkdir /opt/wine-stable/share/wine/gecko
+sudo wget -O /opt/wine-stable/share/wine/gecko/wine-gecko-2.47.3-x86.msi https://dl.winehq.org/wine/wine-gecko/2.47.3/wine-gecko-2.47.3-x86.msi
+sudo wget -O /opt/wine-stable/share/wine/gecko/wine-gecko-2.47.3-x86_64.msi https://dl.winehq.org/wine/wine-gecko/2.47.3/wine-gecko-2.47.3-x86_64.msi
+
+sudo apt install build-essential gcc-multilib gcc-mingw-w64 libasound2-dev libpulse-dev libdbus-1-dev libfontconfig-dev libfreetype-dev libgnutls28-dev libgl-dev libunwind-dev libx11-dev libxcomposite-dev libxcursor-dev libxfixes-dev libxi-dev libxrandr-dev libxrender-dev libxext-dev bison flex 
