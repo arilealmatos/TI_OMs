@@ -1,0 +1,3 @@
+# Arquivo:/usr/share/zentyal/stubs/samba/shares.conf.mas
+# Colocar abaixo da linha que contém vfs objects
+veto files = /*.exe/*.cab/*.nds/*.pif/*.com/*.scr/*.dll/*.msp/*.msi/*.msu/*.ini/*.inf/*.jad/*.jar/*.reg/*.vbs/*.dat/*.cab/
