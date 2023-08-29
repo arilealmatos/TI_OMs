@@ -107,6 +107,15 @@ echo "Adding the repo"
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/ebchat-desktop-keyring.gpg] https://web-msg.eb.mil.br/apt stable main' | sudo tee -a /etc/apt/sources.list.d/ebchat.list
 
 echo "################################################################"
+echo "OCSINVENTORY-AGENT"
+echo "################################################################"
+echo
+echo "Getting the key"
+curl -fsSL http://deb.ocsinventory-ng.org/pubkey.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/ocs-archive-keyring.gpg
+echo "Adding the repo"
+echo "deb http://deb.ocsinventory-ng.org/ubuntu/ jammy main" | sudo tee /etc/apt/sources.list.d/ocsinventory.list
+
+echo "################################################################"
 echo "WINE STABLE"
 echo "################################################################"
 echo
@@ -154,6 +163,7 @@ sudo apt install -y oracle-java17-installer --install-recommends
 sudo apt install -y assinador-serpro --install-recommends
 sudo apt install -y grub-customizer --install-recommends
 sudo apt install -y ebchat-desktop --install-recommends
+sudo apt install -y ocsinventory-agent --install-recommends
 sudo apt install -y winehq-stable --install-recommends
 echo "Adicionando GECKO e MONO"
 sudo mkdir /opt/wine-stable/share/wine/mono
