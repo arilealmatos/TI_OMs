@@ -15,17 +15,24 @@
 # Agradecimentos :                                                 #
 # SecInfor HGeS | TuTI 3ª Cia F Esp | STI PQRMNT12 | STI 9º B Log  #
 # ---------------------------------------------------------------- #
+
 # Arquivo de recibo de backup
-backup_dir=/home/sti/backup
+backup_dir=/home/sti/backups
 
-# Pasta contém arquivos sigaps
-sigaps_dir=/var/www/
+# Pasta contém arquivos SIGAPS
+sigapsrec_dir=/var/www
 
-# BDD sigaps identificadores
+# BDD SIGAPS identifiers
 sigaps_server=localhost
-sigaps_user=sti
-sigaps_password='0x1uru5'
+sigaps_user=root
+sigaps_password='força3'
 sigaps_database=sigaps
+
+# Identificadores BDD SIGAPSREC
+sigapsrec_server=localhost
+sigapsrec_user=root
+sigapsrec_password='força3'
+sigapsrec_database=sigaps_visitantes
 
 # Hora Inicial
 HORAINICIAL=$(date +%T)
@@ -37,13 +44,28 @@ arq_log="backup-sigaps-$(date +%d-%m-%Y_%H-%M).txt"
 #Inicializando o Log
 LOG="$dir_log"/"$arq_log"
 echo "---------------------------------------------------------------------------------------" >"$LOG"
-echo "| Backup SIGAPS iniciado em $HORAINICIAL.                                               |" >>"$LOG"
+echo "| Backup SIGAPS e SIGAPSREC iniciado em $HORAINICIAL.                                          |" >>"$LOG"
 echo "---------------------------------------------------------------------------------------" >>"$LOG"
 status=0
 
-echo "Sistema de backup sigaps" >>"$LOG"
+# Verifique uma montagem
+#mount_verify=yes
+#mount_dir=/home/sti/backup
+echo "Sistema de backup do SIGAPS e SIGAPSREC" >>"$LOG"
 echo "Script desenvolvido por Benjamin Mercier - teclib '<www.teclib.com>" >>"$LOG"
-echo "---------------------------------------------------------------------------------------" >>"$LOG"
+echo "-------------------------------------------------------------------------------------------" >>"$LOG"
+# Verificação de uma montagem
+# Esta parte do script é usada para verificar uma montagem antes de executar o backup.
+# Por exemplo, para uma transferência para um servidor de compartilhamento 'cifs' do Windows, você deve verificar se o compartilhamento está montado corretamente.
+#if [[ "$mount_verify" = "yes" ]]
+#then
+#        check_mount=`mount | grep $mount_dir | wc -l`;
+#        if [[ "$check_mount" -eq "0" ]]
+#        then
+#                echo "ERRO: A pasta $ mount_dir não parece estar montada"
+#                exit 1
+#        fi
+#fi
 
 # Criação de uma pasta temporária e esvaziamento dela
 echo "Criação da pasta temporária" >>"$LOG"
@@ -62,15 +84,19 @@ fi
 # Data atual
 current_date=$(date +%Y-%m-%d_%H-%M)
 
-# MySQLDUMP do banco de dados sigaps
-echo "Despejo de inventário sigaps " >>"$LOG"
+# MySQLDUMP do banco de dados SIGAPS
+echo "Despejo de inventário SIGAPS" >>"$LOG"
 mysqldump -h$sigaps_server -u$sigaps_user -p$sigaps_password $sigaps_database >/tmp/backup-sigaps/sigaps_database_$current_date.sql
 
-# Cópia de sigaps no RSYNC
+# MySQLDUMP do banco de dados SIGAPSREC
+echo "Despejo da base GLPI" >>"$LOG"
+mysqldump -h$sigapsrec_server -u$sigapsrec_user -p$sigapsrec_password $sigapsrec_database >/tmp/backup-sigaps/sigapsrec_database_$current_date.sql
+
+# Cópia de SIGAPS no RSYNC
 # É possível copiá-lo de um servidor remoto
-echo "Cópia do diretório sigaps" >>"$LOG"
-rsync -az $sigaps_dir /tmp/backup-sigaps
-echo "Alterando o nome do diretório sigaps" >>"$LOG"
+echo "Cópia do diretório GLPI" >>"$LOG"
+rsync -az $sigapsrec_dir /tmp/backup-sigaps
+echo "Alterando o nome do diretório SIGAPS" >>"$LOG"
 mv /tmp/backup-sigaps/sigaps /tmp/backup-sigaps/sigaps-$current_date &>/dev/null
 
 #dump do diretório de backup
@@ -93,7 +119,7 @@ scp -P 173 /mnt/server_backup/backup-sigaps-$(date +%Y%m%d).tar.gz administrador
 # Hora Final
 HORAFINAL=$(date +%T)
 
-echo "Backup Concluído em $HORAFINAL.                                                          |" >>"$LOG"
+echo "|Backup Concluído em $HORAFINAL.                                                          |" >>"$LOG"
 # script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 # opção do comando date: -u (utc), -d (date), +%s (second since 1970)
 HORAINICIAL01=$(date -u -d "$HORAINICIAL" +"%s")
@@ -105,7 +131,7 @@ echo "--------------------------------------------------------------------------
 echo "|Tempo gasto para execução do script: $TEMPO.                                        |" >>"$LOG"
 echo "---------------------------------------------------------------------------------------" >>"$LOG"
 
-cp -rf $dir_log/$arq_log $destino
+cp -rf $dir_log/$arq_log $destino/$current_date
 rm -Rfv /mnt/server_backup/*.tar.gz
 
 exit 1
