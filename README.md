@@ -10,6 +10,7 @@ Informação.
 ## 👨‍💻️ Tecnologias Utilizadas
 Esse projeto foi criado utilizando as tecnologias:<br>
 - ***Script BAT;***
+- ***HTML,CSS,Javascript;***
 - ***Script Bash(Shell Script); e***
 - ***Python.***
 ---
