@@ -79,6 +79,13 @@ echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu focal main" | tee /
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A
 echo "Adding the repo"
 sudo add-apt-repository ppa:linuxuprising/java
+echo "Adicionando Oracle Java JRE"
+mkdir -p -v /usr/lib/jre-oracle
+cd files
+tar -zxvf jre-8u381-linux-x64.tar.gz 
+mv -v jre1.8.0_* /usr/lib/jre-oracle
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jre-oracle/jre1.8.0_381/bin/java" 1
+sudo update-alternatives --set java /usr/lib/jre-oracle/jre1.8.0_381/bin/java
 
 echo "################################################################"
 echo "ASSINADOR SERPRO"
