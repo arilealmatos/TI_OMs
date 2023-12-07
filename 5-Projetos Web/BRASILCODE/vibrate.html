@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Vibrate on Click</title>
+    <style>
+        button {
+            background-color: red;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="vibrate()">Vibrate</button>
+    <script>
+        function vibrate() {
+            if (!window.navigator || !window.navigator.vibrate) {
+                return;
+            }
+            window.navigator.vibrate(1000);
+        }
+    </script>
+</body>
+
+</html>

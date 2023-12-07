@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href='assets/css/boxicons.min.css' rel='stylesheet'>-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Contato Ari Leal Matos</title>
+</head>
+
+<body>
+
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <!--<a href="index.html"></a>-->
+                    <img src="img/Mnt_Com.png" alt="" class="img-w">
+                </div>
+                <input type="checkbox" id="click">
+    
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
+                    <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
+                    <li><a href="portfolio.html" style="--navAni:4">Portfolio</a></li>
+                    <li><a href="contato.html" style="--navAni:5">Contato</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="main">
+                <div class="detail">
+                    <h3>Seguem meus contatos:</h3>
+                    <h1><span style="color:#52489C;">lmatos.ari@eb.mil.br  </span> (55)99197-6200 WhatsApp/EBChat</h1> 
+                    <p>RITEx 9º B Log:833-0222
+                    </p>  
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/ari-leal-matos-80261811b/" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/arilealmatos/TI_OMs" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                        <!--<a href="https://www.instagram.com/web_devs__/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/@Web_Devs__" style="--socialAni:4"><i class='bx bxl-youtube'></i></a>-->
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="img/img_2.png" alt="" class="img-w">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+
+</html>
