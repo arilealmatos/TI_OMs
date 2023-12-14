@@ -1,0 +1,5 @@
+# Ajustar permissões gerais
+find /var/www/html/portfolio/ -type d -exec chmod 755 {} \;
+find /var/www/html/portfolio/ -type f -exec chmod 644 {} \;
+
+chown www-data. /var/www/html/* -Rf
