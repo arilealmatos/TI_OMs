@@ -22,7 +22,7 @@ DB=cta
 USUARIO=root
 SENHA=vertrigo
 DIR_LOCAL=/mnt/backup_server/sisbol
-HOST_REMOTO=administrador@10.26.68.6
+HOST_REMOTO=administrador@SEU_IP
 DIR_REMOTO=/mnt/Storage/Backups/Backups_SISBOL
 #HOST_REDUNDANCIA=sti@10.79.28.75
 #DIR_REDUNDANCIA=/var/backups/sistemas/sisbol
@@ -63,12 +63,12 @@ fi
 # Criação das pastas no servidor remoto:
 echo "Criando diretórios no servidor remoto...">>$LOG
 DIR_REMOTO="$DIR_REMOTO"/$(date +%d-%m-%Y)
-ssh -p173 "$HOST_REMOTO" mkdir "$DIR_REMOTO" 2>>$LOG
+ssh -pPORTA "$HOST_REMOTO" mkdir "$DIR_REMOTO" 2>>$LOG
 #DIR_REMOTO=$DIR_REMOTO/sisbol
 #ssh "$HOST_REMOTO" mkdir "$DIR_REMOTO" 2>> $LOG
 
 # Verifica se foram criados corretamente. Se não foram criados, interrompe o backup.
-if ssh -p173 "$HOST_REMOTO" test -d "$DIR_REMOTO" 2>>$LOG;
+if ssh -pPORTA "$HOST_REMOTO" test -d "$DIR_REMOTO" 2>>$LOG;
 then	echo "Diretórios criados com sucesso.">>$LOG
 else	echo "Erro: os diretórios no servidor remoto não foram criados." >>$LOG
 		(( STATUS += 4 ))
@@ -78,9 +78,9 @@ ST_CP=0
 if (( ( ( STATUS / 4 ) % 2 ) == 0 ))
 then	scp -P 173 "$CAMINHO_SQL" "$HOST_REMOTO":"$DIR_REMOTO" 2>>$LOG
 	(( ST_CP += $? ))
-	scp -P 173 "$CAMINHO_PDF" "$HOST_REMOTO":"$DIR_REMOTO" 2>>$LOG
+	scp -P PORTA "$CAMINHO_PDF" "$HOST_REMOTO":"$DIR_REMOTO" 2>>$LOG
 	(( ST_CP += $? ))
-	scp -P 173 "$CAMINHO_SQL" "$HOST_REDUNDANCIA":"$DIR_REDUNDANCIA" 2>>$LOG
+	scp -P PORTA "$CAMINHO_SQL" "$HOST_REDUNDANCIA":"$DIR_REDUNDANCIA" 2>>$LOG
 	#scp "$CAMINHO_PDF" "$HOST_REDUNDANCIA":"$DIR_REDUNDANCIA" 2>>$LOG
 	
 else	echo "Erro: o diretório remoto não eh acessível" >>$LOG
@@ -126,7 +126,7 @@ echo "Procedimento concluido em $(date +'%H:%M %d/%m/%Y')." >>$LOG
 if [[ $STATUS -ne 0 ]]
 then	echo "Codigo de erros: $STATUS" >>$LOG
 fi
-scp -P 173 "$LOG" "$HOST_REMOTO":"$DIR_REMOTO"
+scp -P  "$LOG" "$HOST_REMOTO":"$DIR_REMOTO"
 #scp "$LOG" "$HOST_REDUNDANCIA":"$DIR_REDUNDANCIA"
 exit 0
 

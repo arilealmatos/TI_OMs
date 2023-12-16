@@ -25,13 +25,13 @@ glpi_dir=/var/www/html/glpi
 # BDD OCS Inventory NG identifiers
 ocs_server=localhost
 ocs_user=root
-ocs_password='S4nt@Bl0g*1973'
+ocs_password='SUA_SENHA'
 ocs_database=ocsweb
 
 # Identificadores BDD GLPI
 glpi_server=localhost
 glpi_user=root
-glpi_password='S4nt@Bl0g*1973'
+glpi_password='SUA_SENHA'
 glpi_database=glpiBD
 
 # Hora Inicial
@@ -114,7 +114,7 @@ rm -Rfv /tmp/backup-ocs-glpi &>/dev/null
 # Compactando pasta e arquivos
 echo "Criando arquivo .tar.gz." >>"$LOG"
 tar zcvf /mnt/server_backup/backup-ocs_glpi-$(date +%Y%m%d).tar.gz /home/administrador/backup/backup-ocs-glpi/ &>/dev/null
-scp -P 173 /mnt/server_backup/backup-ocs_glpi-$(date +%Y%m%d).tar.gz administrador@10.26.68.6:/mnt/Storage/Backups/OCS-GLPI/
+scp -P PORTA /mnt/server_backup/backup-ocs_glpi-$(date +%Y%m%d).tar.gz administrador@SEU_IP:/mnt/Storage/Backups/OCS-GLPI/
 
 # Hora Final
 HORAFINAL=$(date +%T)

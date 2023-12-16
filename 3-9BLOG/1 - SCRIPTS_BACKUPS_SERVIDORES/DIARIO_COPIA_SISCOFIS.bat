@@ -35,7 +35,7 @@ REM - ESTRUTURA
 "C:\Program Files\WinSCP\WinSCP.exe" ^
   /log="C:\Backups\SISCOFIS\LOG\WinSCP_%data%_%hora%.log" /ini=nul ^
   /command ^
-    "open sftp://administrador:Gu4r4n12022@10.26.68.6:173/mnt/Storage/Backups/Backups_SIMATEx/ -hostkey=""ssh-ed25519 255 tqoxS23qq7d9XRmk5C/WEL/nxK73/fLIOiHRt5yL5KM="" -rawsettings FSProtocol=2" ^
+    "open sftp://administrador:SUA_SENHA@SEU_IP:PORTA/mnt/Storage/Backups/Backups_SIMATEx/ -hostkey=""ssh-ed25519 255 tqoxS23qq7d9XRmk5C/WEL/nxK73/fLIOiHRt5yL5KM="" -rawsettings FSProtocol=2" ^
     "put C:\Backups\SISCOFIS\simatexom*.*" ^
     "exit"
 @echo Executada COPIA DE ARQUIVO PARA BACKUP. >> %LOG%\"WinSCP_%data%_%hora%.log"

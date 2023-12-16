@@ -24,7 +24,7 @@ sacvom_dir=/var/www/html/
 # BDD sacvom identificadores
 sacvom_server=localhost
 sacvom_user=sacvom
-sacvom_password='S4nt@Bl0g*1973'
+sacvom_password='SUA_SENHA'
 sacvom_database=sacvom
 
 # Hora Inicial
@@ -88,7 +88,7 @@ rm -Rfv /tmp/backup-sacvom &>/dev/null
 # Compactando pasta e arquivos
 echo "Criando arquivo .tar.gz." >>"$LOG"
 tar zcvf /mnt/server_backup/backup-sacvom-$(date +%Y%m%d).tar.gz /home/administrador/backup/backup-sacvom/ &>/dev/null
-scp -P 173 /mnt/server_backup/backup-sacvom-$(date +%Y%m%d).tar.gz administrador@10.26.68.6:/mnt/Storage/Backups/SACVOM/
+scp -P PORTA /mnt/server_backup/backup-sacvom-$(date +%Y%m%d).tar.gz administrador@SEU_IP:/mnt/Storage/Backups/SACVOM/
 
 # Hora Final
 HORAFINAL=$(date +%T)

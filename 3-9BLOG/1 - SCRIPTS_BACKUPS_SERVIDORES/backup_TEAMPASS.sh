@@ -24,7 +24,7 @@ teampass_dir=/var/www/html/
 # BDD intranet identificadores
 teampass_server=localhost
 teampass_user=root
-teampass_password='S4nt@Bl0g*1973'
+teampass_password='SUA_SENHA'
 teampass_database=teampass
 
 # Hora Inicial
@@ -88,7 +88,7 @@ rm -Rfv /tmp/backup-teampass &>/dev/null
 # Compactando pasta e arquivos
 echo "Criando arquivo .tar.gz." >>"$LOG"
 tar zcvf /mnt/server_backup/backup-teampass-$(date +%Y%m%d).tar.gz /home/administrador/backup/backup-teampass/ &>/dev/null
-scp -P 173 /mnt/server_backup/backup-teampass-$(date +%Y%m%d).tar.gz administrador@10.26.68.6:/mnt/Storage/Backups/TEAMPASS/
+scp -P PORTA /mnt/server_backup/backup-teampass-$(date +%Y%m%d).tar.gz administrador@SEU_IP:/mnt/Storage/Backups/TEAMPASS/
 
 # Hora Final
 HORAFINAL=$(date +%T)

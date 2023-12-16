@@ -30,7 +30,7 @@ arranchamento_dir=/var/www/html/Arranchamento
 # Identificadores BDD ARRANCHAMENTO
 arranchamento_server=localhost
 arranchamento_user=root
-arranchamento_password='S4nt@Bl0g*1973'
+arranchamento_password='SUA_SENHA'
 arranchamento_database=rancho
 
 # Hora Inicial
@@ -113,7 +113,7 @@ rm -Rfv /tmp/backup-arranchamento &>/dev/null
 # Compactando pasta e arquivos
 echo "Criando arquivo .tar.gz." >>"$LOG"
 tar zcvf /mnt/server_backup/backup-arranchamento-$(date +%Y%m%d).tar.gz /home/administrador/backup/backup-arranchamento &>/dev/null
-scp -P 173 /mnt/server_backup/backup-arranchamento-$(date +%Y%m%d).* administrador@10.26.68.6:/mnt/Storage/Backups/ARRANCHAMENTO/
+scp -P PORTA /mnt/server_backup/backup-arranchamento-$(date +%Y%m%d).* administrador@SEU_IP:/mnt/Storage/Backups/ARRANCHAMENTO/
 
 # Hora Final
 HORAFINAL=$(date +%T)

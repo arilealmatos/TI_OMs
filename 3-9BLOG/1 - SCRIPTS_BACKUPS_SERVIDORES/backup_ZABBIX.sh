@@ -24,7 +24,7 @@ zabbix_dir=/usr/share/zabbix
 # BDD intranet identificadores
 zabbix_server=localhost
 zabbix_user=zabbix
-zabbix_password='S4nt@Bl0g*1973'
+zabbix_password='SUA_SENHA'
 zabbix_database=zabbix
 
 # Hora Inicial
@@ -88,7 +88,7 @@ rm -Rfv /tmp/backup-zabbix &>/dev/null
 # Compactando pasta e arquivos
 echo "Criando arquivo .tar.gz." >>"$LOG"
 tar zcvf /mnt/server_backup/backup-zabbix-$(date +%Y%m%d).tar.gz /home/administrador/backup/backup-zabbix/ &>/dev/null
-scp -P 173 /mnt/server_backup/backup-zabbix-$(date +%Y%m%d).tar.gz administrador@10.26.68.6:/mnt/Storage/Backups/ZABBIX/
+scp -P PORTA /mnt/server_backup/backup-zabbix-$(date +%Y%m%d).tar.gz administrador@SEU_IP:/mnt/Storage/Backups/ZABBIX/
 
 # Hora Final
 HORAFINAL=$(date +%T)

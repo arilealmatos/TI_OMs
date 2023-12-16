@@ -24,7 +24,7 @@ intranet_dir=/var/www/html/intranet
 # BDD intranet identificadores
 intranet_server=localhost
 intranet_user=root
-intranet_password='S4nt@Bl0g*1973'
+intranet_password='SUA_SENHA'
 intranet_database=intranet
 
 # Hora Inicial
@@ -88,7 +88,7 @@ rm -Rfv /tmp/backup-intranet &>/dev/null
 # Compactando pasta e arquivos
 echo "Criando arquivo .tar.gz." >>"$LOG"
 tar zcvf /mnt/server_backup/backup-intranet-$(date +%Y%m%d).tar.gz /home/administrador/backup/backup-intranet/ &>/dev/null
-scp -P 173 /mnt/server_backup/backup-intranet-$(date +%Y%m%d).tar.gz administrador@10.26.68.3:/mnt/Storage/Backups/INTRANET/
+scp -P PORTA /mnt/server_backup/backup-intranet-$(date +%Y%m%d).tar.gz administrador@SEU_IP:/mnt/Storage/Backups/INTRANET/
 
 # Hora Final
 HORAFINAL=$(date +%T)

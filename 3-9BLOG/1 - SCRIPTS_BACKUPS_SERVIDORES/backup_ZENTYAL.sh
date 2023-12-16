@@ -35,7 +35,7 @@ status=0
 
 #Copiar Arquivos e Pastas Samba 4
 rm -rf $destino/*
-echo 'Gu4r4n12022' | sshfs -p 173 -o password_stdin,nonempty administrador@10.26.68.3:/mnt/Storage/Backups/Servidor/ $destino
+echo 'SUA_SENHA' | sshfs -p PORTA -o password_stdin,nonempty administrador@SEU_IP:/mnt/Storage/Backups/Servidor/ $destino
 cd $destino
 mkdir -p $current_date
 cp -rf $samba/* $destino/$current_date

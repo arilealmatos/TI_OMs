@@ -25,13 +25,13 @@ sigapsrec_dir=/var/www
 # BDD SIGAPS identifiers
 sigaps_server=localhost
 sigaps_user=root
-sigaps_password='força3'
+sigaps_password='SUA_SENHA'
 sigaps_database=sigaps
 
 # Identificadores BDD SIGAPSREC
 sigapsrec_server=localhost
 sigapsrec_user=root
-sigapsrec_password='força3'
+sigapsrec_password='SUA_SENHA'
 sigapsrec_database=sigaps_visitantes
 
 # Hora Inicial
@@ -114,7 +114,7 @@ rm -Rfv /tmp/backup-sigaps &>/dev/null
 # Compactando pasta e arquivos
 echo "Criando arquivo .tar.gz." >>"$LOG"
 tar zcvf /mnt/server_backup/backup-sigaps-$(date +%Y%m%d).tar.gz /home/administrador/backup/backup-sigaps/ &>/dev/null
-scp -P 173 /mnt/server_backup/backup-sigaps-$(date +%Y%m%d).tar.gz administrador@10.26.68.6:/mnt/Storage/Backups/sigaps/
+scp -P PORTA /mnt/server_backup/backup-sigaps-$(date +%Y%m%d).tar.gz administrador@SEU_IP:/mnt/Storage/Backups/sigaps/
 
 # Hora Final
 HORAFINAL=$(date +%T)
