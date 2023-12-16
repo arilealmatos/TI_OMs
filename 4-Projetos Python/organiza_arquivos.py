@@ -4,7 +4,7 @@ import glob
 import shutil
 
 LOGIN1 = 'blog'
-PASSWORD = 'Gu4r4n1@2022'
+PASSWORD = 'SUA_SENHA'
 
 # dicionário mapeando cada extensão com sua pasta correspondente
 # Por exemplo, os arquivos 'jpg', 'png', 'ico', 'gif', 'svg' serão movidos para a pasta 'imagens'
